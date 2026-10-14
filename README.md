@@ -107,6 +107,29 @@ checkpoint has 4,231 completed sources; optional local Valhalla tiles are a
 separate dependency. Search is bounded by available road data and request time,
 so results do not establish an absolute nationwide minimum fuel cost.
 
+## Performance
+
+Prepared station data, routing caches, and shared work for identical requests
+reduce repeated computation. Balanced planning uses a 10-second preferred
+window within a 15-second hard request budget.
+
+A recorded live-routing benchmark on October 13, 2026 used an earlier development
+build on Windows with 12 logical CPUs, 32 Waitress threads, and prepared data
+already loaded. Across 126 trip requests, it returned 120 verified plans,
+six expected low-fuel rejections, and no unexpected failures.
+
+| Routing/cache state | Sequential p95 | Six concurrent requests p95 |
+| --- | ---: | ---: |
+| Cold routing cache | 6.824 s | 9.152 s |
+| Warm routing cache | 4.731 s | 6.984 s |
+| Cached verified result | 0.102 s | 0.528 s |
+
+p95 is the 95th-percentile response time for successful plans. Sequential results
+cover a mix of trip lengths; concurrent results cover six long-trip cases.
+Cold routing means empty routing caches, with the process and data already
+initialized. These are recorded sample results; network and routing-provider
+latency affect actual response times.
+
 ## Tests
 
 ```sh
