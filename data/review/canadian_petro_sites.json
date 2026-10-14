@@ -1,0 +1,19 @@
+{
+  "purpose": "Reviewed Petro-Canada physical sites with CSV highway corroboration; routing pending_check",
+  "records": [
+    {
+      "opis_id": "65939",
+      "province": "BC",
+      "official_address": "1885 West TransCanada Hwy., Exit 366, Kamloops, BC",
+      "official_url": "https://www.petro-canada.ca/-/media/project/petrocanada/content/pdfs/2019-petro-pass-locations-directory.pdf",
+      "overture_id": "360369b8-1fd0-4682-9903-b9d611fb699f"
+    },
+    {
+      "opis_id": "72213",
+      "province": "ON",
+      "official_address": "3535 Highway 89, Cookstown, ON",
+      "official_url": "https://www.petro-canada.ca/en/personal/in-store/a-and-w-locations",
+      "overture_id": "f95e0349-3dab-4965-9e99-1d2fe8ae66c9"
+    }
+  ]
+}

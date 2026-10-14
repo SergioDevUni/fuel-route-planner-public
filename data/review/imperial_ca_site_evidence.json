@@ -1,0 +1,89 @@
+{
+  "source_release": "2026-09-23.1",
+  "review_date": "2026-10-07",
+  "scope": "eight California pilot identities near Imperial Valley and Coachella",
+  "records": [
+    {
+      "opis_id": "10085",
+      "overture_id": "e1c54444-d003-4e2c-8293-1819c1cbd29b",
+      "status": "site_verified",
+      "expected_address": "550 Wake Ave",
+      "evidence_url": "https://www.chp.ca.gov/AdministrativeServicesDivisionSite/Documents/CHP-R-2022-06202%20TxtP.pdf",
+      "additional_evidence_urls": [
+        "https://apps1.cdfa.ca.gov/publicscales/view.aspx?c=13"
+      ],
+      "evidence": "California Highway Patrol lists El Centro Travel Center at 550 Wake Ave, I-8 at SR-86; state public-scale records use the same operator name and address. Overture names the site Super Stop Travel Center.",
+      "discrepancy": "Mapped name differs from CSV; physical address and highway junction agree."
+    },
+    {
+      "opis_id": "66475",
+      "overture_id": "44989671-615d-4173-878a-16447b1cac15",
+      "status": "site_verified",
+      "expected_address": "1791 Maggio Rd",
+      "evidence_url": "https://truckerpath.com/locations/truck-stops/california/calexico/speedway--%287-eleven%29-Number4346-3768/",
+      "additional_evidence_urls": [
+        "https://www.nastc.com/wp-content/PDFS/directories/NASTC_QPN_Stops_WEB.pdf"
+      ],
+      "evidence": "Trucker Path identifies Speedway 4346 at 1791 Maggio Rd, Calexico, on SR-7; NASTC lists the same branch on CA-7.",
+      "discrepancy": "CSV gives SR-7 without street address."
+    },
+    {
+      "opis_id": "67669",
+      "overture_id": "b9023daf-8db8-4ffc-9183-304cb46fe5e2",
+      "status": "site_verified",
+      "expected_address": "2084 S Marina Dr",
+      "evidence_url": "https://locations.pilotflyingj.com/us/ca/thermal/2084-s-marina-dr",
+      "evidence": "Pilot operator lists ONE9 dealer 1271 at 2084 S Marina Dr, Thermal, and publishes matching site coordinates.",
+      "discrepancy": "Several Overture POIs share this address under different names; choose the ONE9 feature, not an arbitrary co-located POI."
+    },
+    {
+      "opis_id": "70321",
+      "overture_id": "b5926344-67b8-429f-9a87-bd59841beca7",
+      "status": "site_verified",
+      "expected_address": "234 Ben Hulse Hwy",
+      "evidence_url": "https://locations.pilotflyingj.com/us/ca/brawley/234-ben-hulse-hwy",
+      "evidence": "Pilot operator lists travel center 1132 at 234 Ben Hulse Hwy, Brawley, near CA-111 and CA-78.",
+      "discrepancy": "Overture contains another Pilot Travel Center in Brawley at 1850 Main St; store number is needed to choose the correct site."
+    },
+    {
+      "opis_id": "70452",
+      "overture_id": null,
+      "status": "operator_coordinate",
+      "store_number": "749",
+      "expected_address": "551 West Main Street",
+      "latitude": 33.037837,
+      "longitude": -115.629103,
+      "coordinate_field": "script[type=application/ld+json].geo",
+      "evidence_url": "https://www.loves.com/locations/ca/westmorland/loves-travel-stop-westmorland-749",
+      "evidence": "Love's operator page identifies store 749, OPIS 70452, at 551 West Main St, Westmorland, and its JSON-LD geo field publishes latitude 33.037837 and longitude -115.629103. The bounded Overture extract has no Love's feature there.",
+      "discrepancy": "Name-only ranking proposed a different Love's location in Coachella; it must not be accepted."
+    },
+    {
+      "opis_id": "71543",
+      "overture_id": "d7637a57-2801-4d20-b913-7c7017e4584d",
+      "status": "review",
+      "expected_address": "350 E Main St",
+      "evidence_url": "https://www.edf.org/sites/default/files/content/05_edf_green_roads_map_package2.pdf",
+      "evidence": "Historical source describes The SoCo Group as a biofuel distributor in El Centro. Overture candidate at 350 E Main St is categorized as an industrial business, not a verified retail fueling site.",
+      "discrepancy": "CSV says SR-111 and branch 4, but no evidence yet ties that branch to a drive-accessible public station."
+    },
+    {
+      "opis_id": "72368",
+      "overture_id": "34371bc3-14f3-4262-99f2-c2e6334b5305",
+      "status": "review",
+      "expected_address": "1496 Carrizo Gorge Road",
+      "evidence_url": "https://timesofsandiego.com/business/2021/03/17/helicopter-on-jacumba-gas-station-mystery-of-i-8-chevron-station-solved/",
+      "evidence": "Local report identifies a Chevron at 1496 Carrizo Gorge Rd near I-8, matching Overture's Jacumba Chevron. The neighboring Shell is a distinct site.",
+      "discrepancy": "The source branch number 352416 is not independently tied to this particular Chevron."
+    },
+    {
+      "opis_id": "73078",
+      "overture_id": "beb735dd-cf77-4097-bd34-5ad917338cbe",
+      "status": "site_verified",
+      "expected_address": "46355 Dillon Rd",
+      "evidence_url": "https://sheleestravelcenters.com/",
+      "evidence": "Operator site identifies Shelee's Travel Center at 46355 Dillon Rd, Coachella, off I-10.",
+      "discrepancy": "CSV gives only I-10 exit 146."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+from pyproj import Geod
+
+GEOD = Geod(ellps="WGS84")
+MAX_LEG_METERS = 804_672.0
+TARGET_SNAP_ALLOWANCE_METERS = 2000.0
+TARGET_SCREEN_POLICY = "geodesic-range-plus-2000m-snap-v1"
+SOURCE_GROUP_CELL_DEGREES = 0.5
+TARGET_GROUP_CELL_DEGREES = 5.0
+SCHEMA_VERSION = "csv-station-edges-v1-auto"

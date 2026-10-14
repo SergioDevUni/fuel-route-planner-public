@@ -1,0 +1,28 @@
+{
+  "review_date": "2026-10-07",
+  "scope": "Two bounded Love's operator-page OPIS and coordinate checks",
+  "records": [
+    {
+      "opis_id": "135",
+      "store_number": "766",
+      "city": "Atkinson",
+      "state": "IL",
+      "evidence_url": "https://www.loves.com/locations/il/atkinson/loves-travel-stop-atkinson-766",
+      "expected_address": "5 South State Street",
+      "latitude": 41.410645,
+      "longitude": -90.016349,
+      "status": "operator_coordinate"
+    },
+    {
+      "opis_id": "253",
+      "store_number": "450",
+      "city": "West Memphis",
+      "state": "AR",
+      "evidence_url": "https://www.loves.com/locations/ar/west-memphis/loves-travel-stop-west-memphis-450",
+      "expected_address": "800 Martin Luther King Dr.",
+      "latitude": 35.153922,
+      "longitude": -90.138293,
+      "status": "operator_coordinate"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "info": {
+    "name": "Fuel Route Planner v1",
+    "description": "Local API demo. Fuel prices and station IDs come from the supplied CSV. A successful trip saves trip_id and result_token as collection variables for the retrieval and map requests.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "base_url", "value": "http://127.0.0.1:8000" },
+    { "key": "trip_id", "value": "" },
+    { "key": "result_token", "value": "" },
+    { "key": "map_url", "value": "" }
+  ],
+  "item": [
+    {
+      "name": "Liveness",
+      "request": { "method": "GET", "url": "{{base_url}}/health/live" }
+    },
+    {
+      "name": "Readiness",
+      "request": { "method": "GET", "url": "{{base_url}}/health/ready" }
+    },
+    {
+      "name": "Trip: Chicago to Joliet, no stop",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{base_url}}/api/v1/trips",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start\": {\"type\": \"city\", \"city\": \"Chicago\", \"state\": \"IL\"},\n  \"finish\": {\"type\": \"city\", \"city\": \"Joliet\", \"state\": \"IL\"},\n  \"initial_fuel_gallons\": \"50\",\n  \"initial_fuel_price_per_gallon\": \"3.20\",\n  \"optimization_mode\": \"balanced\",\n  \"max_extra_duration_minutes\": \"30\"\n}",
+          "options": { "raw": { "language": "json" } }
+        }
+      },
+      "event": [{
+        "listen": "test",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            "if (pm.response.code === 200) {",
+            "  const result = pm.response.json();",
+            "  pm.collectionVariables.set('trip_id', result.trip_id);",
+            "  pm.collectionVariables.set('result_token', result.result_token);",
+            "  pm.collectionVariables.set('map_url', result.map_url);",
+            "}"
+          ]
+        }
+      }]
+    },
+    {
+      "name": "Trip: Green River to Price, fuel stop",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{base_url}}/api/v1/trips",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start\": {\"type\": \"coordinates\", \"latitude\": 38.995, \"longitude\": -110.17},\n  \"finish\": {\"type\": \"city\", \"city\": \"Price\", \"state\": \"UT\"},\n  \"initial_fuel_gallons\": \"1\",\n  \"initial_fuel_price_per_gallon\": \"3.20\",\n  \"optimization_mode\": \"balanced\",\n  \"max_extra_duration_minutes\": \"30\"\n}",
+          "options": { "raw": { "language": "json" } }
+        }
+      },
+      "event": [{
+        "listen": "test",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            "if (pm.response.code === 200) {",
+            "  const result = pm.response.json();",
+            "  pm.collectionVariables.set('trip_id', result.trip_id);",
+            "  pm.collectionVariables.set('result_token', result.result_token);",
+            "  pm.collectionVariables.set('map_url', result.map_url);",
+            "}"
+          ]
+        }
+      }]
+    },
+    {
+      "name": "Retrieve saved result",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Authorization", "value": "Bearer {{result_token}}" }],
+        "url": "{{base_url}}/api/v1/trips/{{trip_id}}"
+      }
+    },
+    {
+      "name": "Open map shell",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/maps/{{trip_id}}"
+      }
+    }
+  ]
+}

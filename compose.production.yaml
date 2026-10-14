@@ -1,0 +1,8 @@
+services:
+  api:
+    environment:
+      FUEL_CONTAINER_MODE: production
+      DJANGO_DEBUG: "0"
+      DJANGO_ALLOWED_HOSTS: ${DJANGO_ALLOWED_HOSTS:?Set production hosts},127.0.0.1
+      FUEL_TRUSTED_PROXY: ${FUEL_TRUSTED_PROXY:?Set the exact TLS proxy address}
+    # HTTPS terminates at the configured proxy; only health paths allow HTTP.

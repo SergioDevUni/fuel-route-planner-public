@@ -1,0 +1,74 @@
+name: checks
+on:
+  push:
+  pull_request:
+  release:
+    types: [published]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ORS_API_KEY: non-live-readiness-sentinel
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.13"
+      - run: uv sync --locked
+      - run: uv run --locked ruff format --check .
+      - run: uv run --locked ruff check .
+      - run: uv run --locked mypy
+      - run: uv run --locked python -m scripts.check_module_boundaries
+      - run: uv run --locked python manage.py check
+      - run: uv run --locked python manage.py makemigrations --check --dry-run
+      - run: uv run --locked python manage.py collectstatic --noinput
+      - name: Run all unit and integration checks
+        run: uv run --locked pytest -q -m "integration or not integration"
+      - run: uv run --locked python manage.py test
+  local-release:
+    if: github.event_name == 'release' || github.event_name == 'workflow_dispatch'
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ORS_API_KEY: non-live-readiness-sentinel
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.13"
+      - run: uv run --locked --no-dev python -m scripts.setup_local
+      - run: uv run --locked --no-dev python -m scripts.start_local --check
+      - run: uv run --locked --no-dev python -m scripts.verify_local_install --expect-clean
+  container:
+    runs-on: ubuntu-latest
+    env:
+      ORS_API_KEY: offline-readiness-sentinel
+      DJANGO_SETTINGS_MODULE: config.settings
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.13"
+      - run: uv sync --locked
+      - name: Prepare isolated synthetic smoke data
+        run: uv run --locked python -m scripts.prepare_container_fixture --output var/container-assets
+      - name: Build and verify the non-root runtime image
+        run: |
+          docker build --target runtime --tag fuel-runtime-smoke .
+          docker run --rm --cpus=2 --memory=1g --env ORS_API_KEY=offline-readiness-sentinel --env DJANGO_DEBUG=1 --entrypoint python fuel-runtime-smoke -m scripts.verify_container_install
+      - name: Verify offline HTTP capacity in the locked test image
+        run: |
+          docker build --target verification --tag fuel-verify-smoke .
+          docker run --rm --cpus=2 --memory=1g --env DJANGO_SETTINGS_MODULE=config.settings --entrypoint python fuel-verify-smoke -m scripts.benchmark_offline_capacity --output /tmp/capacity.json --sustained-seconds 5

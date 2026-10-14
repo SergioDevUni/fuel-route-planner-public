@@ -1,0 +1,5279 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-12T21:13:35.103090+00:00",
+  "selection": "Deterministic equal-state strata; populous origins; short, regional and long geodesic distances; two fuel levels. Inputs remain fixed after outcomes.",
+  "states": [
+    "AL",
+    "AR",
+    "AZ",
+    "CA",
+    "CO",
+    "CT",
+    "DE",
+    "FL",
+    "GA",
+    "IA",
+    "ID",
+    "IL",
+    "IN",
+    "KS",
+    "KY",
+    "LA",
+    "MA",
+    "MD",
+    "ME",
+    "MI",
+    "MN",
+    "MO",
+    "MS",
+    "MT",
+    "NC",
+    "ND",
+    "NE",
+    "NH",
+    "NJ",
+    "NM",
+    "NV",
+    "NY",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VA",
+    "VT",
+    "WA",
+    "WI",
+    "WV",
+    "WY"
+  ],
+  "gazetteer_sha256": "afac8986f21002694bf4a19bc67e70662855cf4e161f69a34e8fb41d876627fc",
+  "candidate_sha256": "763e4064e393e6615ea4a698ebbc4b2425a366ad723782e241658018f0f585ad",
+  "cases": {
+    "al_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4068590"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4049979"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Huntsville",
+      "finish_name": "Birmingham",
+      "start_state": "AL",
+      "finish_state": "AL",
+      "geodesic_miles": 84.301
+    },
+    "al_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4068590"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4049979"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Huntsville",
+      "finish_name": "Birmingham",
+      "start_state": "AL",
+      "finish_state": "AL",
+      "geodesic_miles": 84.301
+    },
+    "al_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4068590"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4257227"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Huntsville",
+      "finish_name": "Evansville",
+      "start_state": "AL",
+      "finish_state": "IN",
+      "geodesic_miles": 230.145
+    },
+    "al_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4068590"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4257227"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Huntsville",
+      "finish_name": "Evansville",
+      "start_state": "AL",
+      "finish_state": "IN",
+      "geodesic_miles": 230.145
+    },
+    "al_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4068590"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4145381"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Huntsville",
+      "finish_name": "Wilmington",
+      "start_state": "AL",
+      "finish_state": "DE",
+      "geodesic_miles": 699.315
+    },
+    "al_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4068590"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4145381"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Huntsville",
+      "finish_name": "Wilmington",
+      "start_state": "AL",
+      "finish_state": "DE",
+      "geodesic_miles": 699.315
+    },
+    "ar_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4119403"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4106458"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Little Rock",
+      "finish_name": "Conway",
+      "start_state": "AR",
+      "finish_state": "AR",
+      "geodesic_miles": 25.13
+    },
+    "ar_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4119403"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4106458"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Little Rock",
+      "finish_name": "Conway",
+      "start_state": "AR",
+      "finish_state": "AR",
+      "geodesic_miles": 25.13
+    },
+    "ar_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4119403"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4531405"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Little Rock",
+      "finish_name": "Broken Arrow",
+      "start_state": "AR",
+      "finish_state": "OK",
+      "geodesic_miles": 217.16
+    },
+    "ar_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4119403"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4531405"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Little Rock",
+      "finish_name": "Broken Arrow",
+      "start_state": "AR",
+      "finish_state": "OK",
+      "geodesic_miles": 217.16
+    },
+    "ar_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4119403"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Little Rock",
+      "finish_name": "Minneapolis",
+      "start_state": "AR",
+      "finish_state": "MN",
+      "geodesic_miles": 707.915
+    },
+    "ar_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4119403"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Little Rock",
+      "finish_name": "Minneapolis",
+      "start_state": "AR",
+      "finish_state": "MN",
+      "geodesic_miles": 707.915
+    },
+    "az_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5308655"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:7310164"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Phoenix",
+      "finish_name": "San Tan Valley",
+      "start_state": "AZ",
+      "finish_state": "AZ",
+      "geodesic_miles": 36.229
+    },
+    "az_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5308655"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:7310164"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Phoenix",
+      "finish_name": "San Tan Valley",
+      "start_state": "AZ",
+      "finish_state": "AZ",
+      "geodesic_miles": 36.229
+    },
+    "az_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5308655"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5505411"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Phoenix",
+      "finish_name": "Henderson",
+      "start_state": "AZ",
+      "finish_state": "NV",
+      "geodesic_miles": 243.456
+    },
+    "az_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5308655"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5505411"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Phoenix",
+      "finish_name": "Henderson",
+      "start_state": "AZ",
+      "finish_state": "NV",
+      "geodesic_miles": 243.456
+    },
+    "az_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5308655"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5586437"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Phoenix",
+      "finish_name": "Boise",
+      "start_state": "AZ",
+      "finish_state": "ID",
+      "geodesic_miles": 735.722
+    },
+    "az_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5308655"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5586437"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Phoenix",
+      "finish_name": "Boise",
+      "start_state": "AZ",
+      "finish_state": "ID",
+      "geodesic_miles": 735.722
+    },
+    "ca_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5368361"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5323810"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Los Angeles",
+      "finish_name": "Anaheim",
+      "start_state": "CA",
+      "finish_state": "CA",
+      "geodesic_miles": 24.106
+    },
+    "ca_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5368361"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5323810"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Los Angeles",
+      "finish_name": "Anaheim",
+      "start_state": "CA",
+      "finish_state": "CA",
+      "geodesic_miles": 24.106
+    },
+    "ca_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5368361"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5509952"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Los Angeles",
+      "finish_name": "Paradise",
+      "start_state": "CA",
+      "finish_state": "NV",
+      "geodesic_miles": 225.095
+    },
+    "ca_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5368361"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5509952"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Los Angeles",
+      "finish_name": "Paradise",
+      "start_state": "CA",
+      "finish_state": "NV",
+      "geodesic_miles": 225.095
+    },
+    "ca_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5368361"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5586437"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Los Angeles",
+      "finish_name": "Boise",
+      "start_state": "CA",
+      "finish_state": "ID",
+      "geodesic_miles": 668.599
+    },
+    "ca_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5368361"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5586437"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Los Angeles",
+      "finish_name": "Boise",
+      "start_state": "CA",
+      "finish_state": "ID",
+      "geodesic_miles": 668.599
+    },
+    "co_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5419384"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5417598"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Denver",
+      "finish_name": "Colorado Springs",
+      "start_state": "CO",
+      "finish_state": "CO",
+      "geodesic_miles": 63.061
+    },
+    "co_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5419384"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5417598"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Denver",
+      "finish_name": "Colorado Springs",
+      "start_state": "CO",
+      "finish_state": "CO",
+      "geodesic_miles": 63.061
+    },
+    "co_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5419384"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5820705"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Denver",
+      "finish_name": "Casper",
+      "start_state": "CO",
+      "finish_state": "WY",
+      "geodesic_miles": 226.617
+    },
+    "co_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5419384"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5820705"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Denver",
+      "finish_name": "Casper",
+      "start_state": "CO",
+      "finish_state": "WY",
+      "geodesic_miles": 226.617
+    },
+    "co_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5419384"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Denver",
+      "finish_name": "Minneapolis",
+      "start_state": "CO",
+      "finish_state": "MN",
+      "geodesic_miles": 699.566
+    },
+    "co_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5419384"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Denver",
+      "finish_name": "Minneapolis",
+      "start_state": "CO",
+      "finish_state": "MN",
+      "geodesic_miles": 699.566
+    },
+    "ct_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5282804"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4843564"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Bridgeport",
+      "finish_name": "Stamford",
+      "start_state": "CT",
+      "finish_state": "CT",
+      "geodesic_miles": 20.19
+    },
+    "ct_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5282804"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4843564"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Bridgeport",
+      "finish_name": "Stamford",
+      "start_state": "CT",
+      "finish_state": "CT",
+      "geodesic_miles": 20.19
+    },
+    "ct_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5282804"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4982720"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Bridgeport",
+      "finish_name": "West Scarborough",
+      "start_state": "CT",
+      "finish_state": "ME",
+      "geodesic_miles": 218.596
+    },
+    "ct_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5282804"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4982720"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Bridgeport",
+      "finish_name": "West Scarborough",
+      "start_state": "CT",
+      "finish_state": "ME",
+      "geodesic_miles": 218.596
+    },
+    "ct_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5282804"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4299276"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Bridgeport",
+      "finish_name": "Louisville",
+      "start_state": "CT",
+      "finish_state": "KY",
+      "geodesic_miles": 698.727
+    },
+    "ct_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5282804"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4299276"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Bridgeport",
+      "finish_name": "Louisville",
+      "start_state": "CT",
+      "finish_state": "KY",
+      "geodesic_miles": 698.727
+    },
+    "de_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4145381"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4142290"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Wilmington",
+      "finish_name": "Dover",
+      "start_state": "DE",
+      "finish_state": "DE",
+      "geodesic_miles": 40.567
+    },
+    "de_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4145381"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4142290"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Wilmington",
+      "finish_name": "Dover",
+      "start_state": "DE",
+      "finish_state": "DE",
+      "geodesic_miles": 40.567
+    },
+    "de_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4145381"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4951788"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Wilmington",
+      "finish_name": "Springfield",
+      "start_state": "DE",
+      "finish_state": "MA",
+      "geodesic_miles": 224.402
+    },
+    "de_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4145381"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4951788"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Wilmington",
+      "finish_name": "Springfield",
+      "start_state": "DE",
+      "finish_state": "MA",
+      "geodesic_miles": 224.402
+    },
+    "de_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4145381"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4068590"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Wilmington",
+      "finish_name": "Huntsville",
+      "start_state": "DE",
+      "finish_state": "AL",
+      "geodesic_miles": 699.315
+    },
+    "de_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4145381"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4068590"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Wilmington",
+      "finish_name": "Huntsville",
+      "start_state": "DE",
+      "finish_state": "AL",
+      "geodesic_miles": 699.315
+    },
+    "fl_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4160021"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4156404"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Jacksonville",
+      "finish_name": "Gainesville",
+      "start_state": "FL",
+      "finish_state": "FL",
+      "geodesic_miles": 61.703
+    },
+    "fl_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4160021"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4156404"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Jacksonville",
+      "finish_name": "Gainesville",
+      "start_state": "FL",
+      "finish_state": "FL",
+      "geodesic_miles": 61.703
+    },
+    "fl_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4160021"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4589387"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Jacksonville",
+      "finish_name": "North Charleston",
+      "start_state": "FL",
+      "finish_state": "SC",
+      "geodesic_miles": 200.062
+    },
+    "fl_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4160021"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4589387"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Jacksonville",
+      "finish_name": "North Charleston",
+      "start_state": "FL",
+      "finish_state": "SC",
+      "geodesic_miles": 200.062
+    },
+    "fl_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4160021"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Jacksonville",
+      "finish_name": "Indianapolis",
+      "start_state": "FL",
+      "finish_state": "IN",
+      "geodesic_miles": 698.51
+    },
+    "fl_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4160021"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Jacksonville",
+      "finish_name": "Indianapolis",
+      "start_state": "FL",
+      "finish_state": "IN",
+      "geodesic_miles": 698.51
+    },
+    "ga_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4180439"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4180386"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Atlanta",
+      "finish_name": "Athens",
+      "start_state": "GA",
+      "finish_state": "GA",
+      "geodesic_miles": 59.889
+    },
+    "ga_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4180439"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4180386"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Atlanta",
+      "finish_name": "Athens",
+      "start_state": "GA",
+      "finish_state": "GA",
+      "geodesic_miles": 59.889
+    },
+    "ga_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4180439"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4221552"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Atlanta",
+      "finish_name": "Savannah",
+      "start_state": "GA",
+      "finish_state": "GA",
+      "geodesic_miles": 222.913
+    },
+    "ga_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4180439"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4221552"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Atlanta",
+      "finish_name": "Savannah",
+      "start_state": "GA",
+      "finish_state": "GA",
+      "geodesic_miles": 222.913
+    },
+    "ga_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4180439"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4699066"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Atlanta",
+      "finish_name": "Houston",
+      "start_state": "GA",
+      "finish_state": "TX",
+      "geodesic_miles": 701.544
+    },
+    "ga_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4180439"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4699066"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Atlanta",
+      "finish_name": "Houston",
+      "start_state": "GA",
+      "finish_state": "TX",
+      "geodesic_miles": 701.544
+    },
+    "ia_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4853828"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4880889"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Des Moines",
+      "finish_name": "Waterloo",
+      "start_state": "IA",
+      "finish_state": "IA",
+      "geodesic_miles": 89.634
+    },
+    "ia_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4853828"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4880889"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Des Moines",
+      "finish_name": "Waterloo",
+      "start_state": "IA",
+      "finish_state": "IA",
+      "geodesic_miles": 89.634
+    },
+    "ia_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4853828"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5018739"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Des Moines",
+      "finish_name": "Bloomington",
+      "start_state": "IA",
+      "finish_state": "MN",
+      "geodesic_miles": 224.233
+    },
+    "ia_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4853828"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5018739"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Des Moines",
+      "finish_name": "Bloomington",
+      "start_state": "IA",
+      "finish_state": "MN",
+      "geodesic_miles": 224.233
+    },
+    "ia_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4853828"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4431410"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Des Moines",
+      "finish_name": "Jackson",
+      "start_state": "IA",
+      "finish_state": "MS",
+      "geodesic_miles": 668.684
+    },
+    "ia_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4853828"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4431410"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Des Moines",
+      "finish_name": "Jackson",
+      "start_state": "IA",
+      "finish_state": "MS",
+      "geodesic_miles": 668.684
+    },
+    "id_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5586437"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5587698"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Boise",
+      "finish_name": "Caldwell",
+      "start_state": "ID",
+      "finish_state": "ID",
+      "geodesic_miles": 24.502
+    },
+    "id_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5586437"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5587698"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Boise",
+      "finish_name": "Caldwell",
+      "start_state": "ID",
+      "finish_state": "ID",
+      "geodesic_miles": 24.502
+    },
+    "id_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5586437"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5596475"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Boise",
+      "finish_name": "Idaho Falls",
+      "start_state": "ID",
+      "finish_state": "ID",
+      "geodesic_miles": 209.611
+    },
+    "id_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5586437"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5596475"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Boise",
+      "finish_name": "Idaho Falls",
+      "start_state": "ID",
+      "finish_state": "ID",
+      "geodesic_miles": 209.611
+    },
+    "id_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5586437"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5368361"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Boise",
+      "finish_name": "Los Angeles",
+      "start_state": "ID",
+      "finish_state": "CA",
+      "geodesic_miles": 668.599
+    },
+    "id_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5586437"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5368361"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Boise",
+      "finish_name": "Los Angeles",
+      "start_state": "ID",
+      "finish_state": "CA",
+      "geodesic_miles": 668.599
+    },
+    "il_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4887398"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4883817"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Chicago",
+      "finish_name": "Aurora",
+      "start_state": "IL",
+      "finish_state": "IL",
+      "geodesic_miles": 35.145
+    },
+    "il_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4887398"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4883817"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Chicago",
+      "finish_name": "Aurora",
+      "start_state": "IL",
+      "finish_state": "IL",
+      "geodesic_miles": 35.145
+    },
+    "il_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4887398"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5174035"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Chicago",
+      "finish_name": "Toledo",
+      "start_state": "IL",
+      "finish_state": "OH",
+      "geodesic_miles": 211.976
+    },
+    "il_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4887398"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5174035"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Chicago",
+      "finish_name": "Toledo",
+      "start_state": "IL",
+      "finish_state": "OH",
+      "geodesic_miles": 211.976
+    },
+    "il_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4887398"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5101798"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Chicago",
+      "finish_name": "Newark",
+      "start_state": "IL",
+      "finish_state": "NJ",
+      "geodesic_miles": 704.938
+    },
+    "il_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4887398"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5101798"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Chicago",
+      "finish_name": "Newark",
+      "start_state": "IL",
+      "finish_state": "NJ",
+      "geodesic_miles": 704.938
+    },
+    "in_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4254679"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Indianapolis",
+      "finish_name": "Bloomington",
+      "start_state": "IN",
+      "finish_state": "IN",
+      "geodesic_miles": 46.03
+    },
+    "in_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4254679"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Indianapolis",
+      "finish_name": "Bloomington",
+      "start_state": "IN",
+      "finish_state": "IN",
+      "geodesic_miles": 46.03
+    },
+    "in_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4809537"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Indianapolis",
+      "finish_name": "Huntington",
+      "start_state": "IN",
+      "finish_state": "WV",
+      "geodesic_miles": 220.197
+    },
+    "in_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4809537"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Indianapolis",
+      "finish_name": "Huntington",
+      "start_state": "IN",
+      "finish_state": "WV",
+      "geodesic_miles": 220.197
+    },
+    "in_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4160021"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Indianapolis",
+      "finish_name": "Jacksonville",
+      "start_state": "IN",
+      "finish_state": "FL",
+      "geodesic_miles": 698.51
+    },
+    "in_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4160021"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Indianapolis",
+      "finish_name": "Jacksonville",
+      "start_state": "IN",
+      "finish_state": "FL",
+      "geodesic_miles": 698.51
+    },
+    "ks_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4281730"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4278890"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Wichita",
+      "finish_name": "Salina",
+      "start_state": "KS",
+      "finish_state": "KS",
+      "geodesic_miles": 80.572
+    },
+    "ks_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4281730"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4278890"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Wichita",
+      "finish_name": "Salina",
+      "start_state": "KS",
+      "finish_state": "KS",
+      "geodesic_miles": 80.572
+    },
+    "ks_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4281730"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4540737"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Wichita",
+      "finish_name": "Lawton",
+      "start_state": "KS",
+      "finish_state": "OK",
+      "geodesic_miles": 220.601
+    },
+    "ks_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4281730"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4540737"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Wichita",
+      "finish_name": "Lawton",
+      "start_state": "KS",
+      "finish_state": "OK",
+      "geodesic_miles": 220.601
+    },
+    "ks_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4281730"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4335045"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Wichita",
+      "finish_name": "New Orleans",
+      "start_state": "KS",
+      "finish_state": "LA",
+      "geodesic_miles": 676.929
+    },
+    "ks_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4281730"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4335045"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Wichita",
+      "finish_name": "New Orleans",
+      "start_state": "KS",
+      "finish_state": "LA",
+      "geodesic_miles": 676.929
+    },
+    "ky_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4299276"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4297983"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Louisville",
+      "finish_name": "Lexington",
+      "start_state": "KY",
+      "finish_state": "KY",
+      "geodesic_miles": 72.196
+    },
+    "ky_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4299276"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4297983"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Louisville",
+      "finish_name": "Lexington",
+      "start_state": "KY",
+      "finish_state": "KY",
+      "geodesic_miles": 72.196
+    },
+    "ky_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4299276"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4612862"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Louisville",
+      "finish_name": "Chattanooga",
+      "start_state": "KY",
+      "finish_state": "TN",
+      "geodesic_miles": 222.653
+    },
+    "ky_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4299276"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4612862"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Louisville",
+      "finish_name": "Chattanooga",
+      "start_state": "KY",
+      "finish_state": "TN",
+      "geodesic_miles": 222.653
+    },
+    "ky_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4299276"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5282804"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Louisville",
+      "finish_name": "Bridgeport",
+      "start_state": "KY",
+      "finish_state": "CT",
+      "geodesic_miles": 698.727
+    },
+    "ky_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4299276"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5282804"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Louisville",
+      "finish_name": "Bridgeport",
+      "start_state": "KY",
+      "finish_state": "CT",
+      "geodesic_miles": 698.727
+    },
+    "la_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4335045"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4315588"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "New Orleans",
+      "finish_name": "Baton Rouge",
+      "start_state": "LA",
+      "finish_state": "LA",
+      "geodesic_miles": 74.586
+    },
+    "la_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4335045"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4315588"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "New Orleans",
+      "finish_name": "Baton Rouge",
+      "start_state": "LA",
+      "finish_state": "LA",
+      "geodesic_miles": 74.586
+    },
+    "la_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4335045"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4094455"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "New Orleans",
+      "finish_name": "Tuscaloosa",
+      "start_state": "LA",
+      "finish_state": "AL",
+      "geodesic_miles": 268.57
+    },
+    "la_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4335045"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4094455"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "New Orleans",
+      "finish_name": "Tuscaloosa",
+      "start_state": "LA",
+      "finish_state": "AL",
+      "geodesic_miles": 268.57
+    },
+    "la_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4335045"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "New Orleans",
+      "finish_name": "Indianapolis",
+      "start_state": "LA",
+      "finish_state": "IN",
+      "geodesic_miles": 711.959
+    },
+    "la_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4335045"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "New Orleans",
+      "finish_name": "Indianapolis",
+      "start_state": "LA",
+      "finish_state": "IN",
+      "geodesic_miles": 711.959
+    },
+    "ma_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4930956"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4956184"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Boston",
+      "finish_name": "Worcester",
+      "start_state": "MA",
+      "finish_state": "MA",
+      "geodesic_miles": 38.61
+    },
+    "ma_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4930956"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4956184"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Boston",
+      "finish_name": "Worcester",
+      "start_state": "MA",
+      "finish_state": "MA",
+      "geodesic_miles": 38.61
+    },
+    "ma_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4930956"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5097529"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Boston",
+      "finish_name": "Edison",
+      "start_state": "MA",
+      "finish_state": "NJ",
+      "geodesic_miles": 215.439
+    },
+    "ma_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4930956"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5097529"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Boston",
+      "finish_name": "Edison",
+      "start_state": "MA",
+      "finish_state": "NJ",
+      "geodesic_miles": 215.439
+    },
+    "ma_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4930956"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4460243"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Boston",
+      "finish_name": "Charlotte",
+      "start_state": "MA",
+      "finish_state": "NC",
+      "geodesic_miles": 720.826
+    },
+    "ma_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4930956"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4460243"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Boston",
+      "finish_name": "Charlotte",
+      "start_state": "MA",
+      "finish_state": "NC",
+      "geodesic_miles": 720.826
+    },
+    "md_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4347778"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4356050"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Baltimore",
+      "finish_name": "Germantown",
+      "start_state": "MD",
+      "finish_state": "MD",
+      "geodesic_miles": 36.293
+    },
+    "md_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4347778"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4356050"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Baltimore",
+      "finish_name": "Germantown",
+      "start_state": "MD",
+      "finish_state": "MD",
+      "geodesic_miles": 36.293
+    },
+    "md_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4347778"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5282804"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Baltimore",
+      "finish_name": "Bridgeport",
+      "start_state": "MD",
+      "finish_state": "CT",
+      "geodesic_miles": 223.0
+    },
+    "md_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4347778"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5282804"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Baltimore",
+      "finish_name": "Bridgeport",
+      "start_state": "MD",
+      "finish_state": "CT",
+      "geodesic_miles": 223.0
+    },
+    "md_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4347778"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4160021"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Baltimore",
+      "finish_name": "Jacksonville",
+      "start_state": "MD",
+      "finish_state": "FL",
+      "geodesic_miles": 680.532
+    },
+    "md_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4347778"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4160021"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Baltimore",
+      "finish_name": "Jacksonville",
+      "start_state": "MD",
+      "finish_state": "FL",
+      "geodesic_miles": 680.532
+    },
+    "me_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4975802"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4969398"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Portland",
+      "finish_name": "Lewiston",
+      "start_state": "ME",
+      "finish_state": "ME",
+      "geodesic_miles": 30.663
+    },
+    "me_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4975802"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4969398"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Portland",
+      "finish_name": "Lewiston",
+      "start_state": "ME",
+      "finish_state": "ME",
+      "geodesic_miles": 30.663
+    },
+    "me_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4975802"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5282804"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Portland",
+      "finish_name": "Bridgeport",
+      "start_state": "ME",
+      "finish_state": "CT",
+      "geodesic_miles": 227.389
+    },
+    "me_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4975802"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5282804"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Portland",
+      "finish_name": "Bridgeport",
+      "start_state": "ME",
+      "finish_state": "CT",
+      "geodesic_miles": 227.389
+    },
+    "me_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4975802"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4509177"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Portland",
+      "finish_name": "Columbus",
+      "start_state": "ME",
+      "finish_state": "OH",
+      "geodesic_miles": 704.622
+    },
+    "me_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4975802"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4509177"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Portland",
+      "finish_name": "Columbus",
+      "start_state": "ME",
+      "finish_state": "OH",
+      "geodesic_miles": 704.622
+    },
+    "mi_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4990729"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4984247"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Detroit",
+      "finish_name": "Ann Arbor",
+      "start_state": "MI",
+      "finish_state": "MI",
+      "geodesic_miles": 35.808
+    },
+    "mi_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4990729"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4984247"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Detroit",
+      "finish_name": "Ann Arbor",
+      "start_state": "MI",
+      "finish_state": "MI",
+      "geodesic_miles": 35.808
+    },
+    "mi_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4990729"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4817641"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Detroit",
+      "finish_name": "Parkersburg",
+      "start_state": "MI",
+      "finish_state": "WV",
+      "geodesic_miles": 225.331
+    },
+    "mi_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4990729"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4817641"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Detroit",
+      "finish_name": "Parkersburg",
+      "start_state": "MI",
+      "finish_state": "WV",
+      "geodesic_miles": 225.331
+    },
+    "mi_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4990729"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5231851"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Detroit",
+      "finish_name": "Sioux Falls",
+      "start_state": "MI",
+      "finish_state": "SD",
+      "geodesic_miles": 698.16
+    },
+    "mi_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4990729"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5231851"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Detroit",
+      "finish_name": "Sioux Falls",
+      "start_state": "MI",
+      "finish_state": "SD",
+      "geodesic_miles": 698.16
+    },
+    "mn_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5043473"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Minneapolis",
+      "finish_name": "Rochester",
+      "start_state": "MN",
+      "finish_state": "MN",
+      "geodesic_miles": 76.927
+    },
+    "mn_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5043473"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Minneapolis",
+      "finish_name": "Rochester",
+      "start_state": "MN",
+      "finish_state": "MN",
+      "geodesic_miles": 76.927
+    },
+    "mn_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4850751"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Minneapolis",
+      "finish_name": "Cedar Rapids",
+      "start_state": "MN",
+      "finish_state": "IA",
+      "geodesic_miles": 220.699
+    },
+    "mn_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4850751"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Minneapolis",
+      "finish_name": "Cedar Rapids",
+      "start_state": "MN",
+      "finish_state": "IA",
+      "geodesic_miles": 220.699
+    },
+    "mn_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5419384"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Minneapolis",
+      "finish_name": "Denver",
+      "start_state": "MN",
+      "finish_state": "CO",
+      "geodesic_miles": 699.566
+    },
+    "mn_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5419384"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Minneapolis",
+      "finish_name": "Denver",
+      "start_state": "MN",
+      "finish_state": "CO",
+      "geodesic_miles": 699.566
+    },
+    "mo_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4393217"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4407010"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Kansas City",
+      "finish_name": "Saint Joseph",
+      "start_state": "MO",
+      "finish_state": "MO",
+      "geodesic_miles": 48.321
+    },
+    "mo_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4393217"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4407010"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Kansas City",
+      "finish_name": "Saint Joseph",
+      "start_state": "MO",
+      "finish_state": "MO",
+      "geodesic_miles": 48.321
+    },
+    "mo_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4393217"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4531405"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Kansas City",
+      "finish_name": "Broken Arrow",
+      "start_state": "MO",
+      "finish_state": "OK",
+      "geodesic_miles": 220.422
+    },
+    "mo_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4393217"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4531405"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Kansas City",
+      "finish_name": "Broken Arrow",
+      "start_state": "MO",
+      "finish_state": "OK",
+      "geodesic_miles": 220.422
+    },
+    "mo_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4393217"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4335045"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Kansas City",
+      "finish_name": "New Orleans",
+      "start_state": "MO",
+      "finish_state": "LA",
+      "geodesic_miles": 680.461
+    },
+    "mo_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4393217"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4335045"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Kansas City",
+      "finish_name": "New Orleans",
+      "start_state": "MO",
+      "finish_state": "LA",
+      "geodesic_miles": 680.461
+    },
+    "ms_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4431410"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4429295"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Jackson",
+      "finish_name": "Hattiesburg",
+      "start_state": "MS",
+      "finish_state": "MS",
+      "geodesic_miles": 85.153
+    },
+    "ms_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4431410"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4429295"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Jackson",
+      "finish_name": "Hattiesburg",
+      "start_state": "MS",
+      "finish_state": "MS",
+      "geodesic_miles": 85.153
+    },
+    "ms_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4431410"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4049979"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Jackson",
+      "finish_name": "Birmingham",
+      "start_state": "MS",
+      "finish_state": "AL",
+      "geodesic_miles": 213.865
+    },
+    "ms_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4431410"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4049979"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Jackson",
+      "finish_name": "Birmingham",
+      "start_state": "MS",
+      "finish_state": "AL",
+      "geodesic_miles": 213.865
+    },
+    "ms_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4431410"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5074472"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Jackson",
+      "finish_name": "Omaha",
+      "start_state": "MS",
+      "finish_state": "NE",
+      "geodesic_miles": 694.884
+    },
+    "ms_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4431410"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5074472"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Jackson",
+      "finish_name": "Omaha",
+      "start_state": "MS",
+      "finish_state": "NE",
+      "geodesic_miles": 694.884
+    },
+    "mt_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5640350"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5656170"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Billings",
+      "finish_name": "Hardin",
+      "start_state": "MT",
+      "finish_state": "MT",
+      "geodesic_miles": 43.103
+    },
+    "mt_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5640350"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5656170"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Billings",
+      "finish_name": "Hardin",
+      "start_state": "MT",
+      "finish_state": "MT",
+      "geodesic_miles": 43.103
+    },
+    "mt_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5640350"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5820705"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Billings",
+      "finish_name": "Casper",
+      "start_state": "MT",
+      "finish_state": "WY",
+      "geodesic_miles": 228.695
+    },
+    "mt_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5640350"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5820705"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Billings",
+      "finish_name": "Casper",
+      "start_state": "MT",
+      "finish_state": "WY",
+      "geodesic_miles": 228.695
+    },
+    "mt_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5640350"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5074472"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Billings",
+      "finish_name": "Omaha",
+      "start_state": "MT",
+      "finish_state": "NE",
+      "geodesic_miles": 703.074
+    },
+    "mt_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5640350"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5074472"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Billings",
+      "finish_name": "Omaha",
+      "start_state": "MT",
+      "finish_state": "NE",
+      "geodesic_miles": 703.074
+    },
+    "nc_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4460243"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4469146"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Charlotte",
+      "finish_name": "Greensboro",
+      "start_state": "NC",
+      "finish_state": "NC",
+      "geodesic_miles": 83.047
+    },
+    "nc_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4460243"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4469146"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Charlotte",
+      "finish_name": "Greensboro",
+      "start_state": "NC",
+      "finish_state": "NC",
+      "geodesic_miles": 83.047
+    },
+    "nc_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4460243"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4801859"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Charlotte",
+      "finish_name": "Charleston",
+      "start_state": "NC",
+      "finish_state": "WV",
+      "geodesic_miles": 219.735
+    },
+    "nc_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4460243"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4801859"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Charlotte",
+      "finish_name": "Charleston",
+      "start_state": "NC",
+      "finish_state": "WV",
+      "geodesic_miles": 219.735
+    },
+    "nc_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4460243"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5224151"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Charlotte",
+      "finish_name": "Providence",
+      "start_state": "NC",
+      "finish_state": "RI",
+      "geodesic_miles": 683.436
+    },
+    "nc_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4460243"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5224151"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Charlotte",
+      "finish_name": "Providence",
+      "start_state": "NC",
+      "finish_state": "RI",
+      "geodesic_miles": 683.436
+    },
+    "nd_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5059163"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5059429"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Fargo",
+      "finish_name": "Grand Forks",
+      "start_state": "ND",
+      "finish_state": "ND",
+      "geodesic_miles": 73.296
+    },
+    "nd_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5059163"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5059429"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Fargo",
+      "finish_name": "Grand Forks",
+      "start_state": "ND",
+      "finish_state": "ND",
+      "geodesic_miles": 73.296
+    },
+    "nd_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5059163"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5018739"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Fargo",
+      "finish_name": "Bloomington",
+      "start_state": "ND",
+      "finish_state": "MN",
+      "geodesic_miles": 219.432
+    },
+    "nd_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5059163"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5018739"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Fargo",
+      "finish_name": "Bloomington",
+      "start_state": "ND",
+      "finish_state": "MN",
+      "geodesic_miles": 219.432
+    },
+    "nd_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5059163"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Fargo",
+      "finish_name": "Indianapolis",
+      "start_state": "ND",
+      "finish_state": "IN",
+      "geodesic_miles": 725.417
+    },
+    "nd_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5059163"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Fargo",
+      "finish_name": "Indianapolis",
+      "start_state": "ND",
+      "finish_state": "IN",
+      "geodesic_miles": 725.417
+    },
+    "ne_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5074472"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5072006"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Omaha",
+      "finish_name": "Lincoln",
+      "start_state": "NE",
+      "finish_state": "NE",
+      "geodesic_miles": 49.322
+    },
+    "ne_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5074472"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5072006"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Omaha",
+      "finish_name": "Lincoln",
+      "start_state": "NE",
+      "finish_state": "NE",
+      "geodesic_miles": 49.322
+    },
+    "ne_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5074472"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5226534"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Omaha",
+      "finish_name": "Brookings",
+      "start_state": "NE",
+      "finish_state": "SD",
+      "geodesic_miles": 215.346
+    },
+    "ne_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5074472"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5226534"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Omaha",
+      "finish_name": "Brookings",
+      "start_state": "NE",
+      "finish_state": "SD",
+      "geodesic_miles": 215.346
+    },
+    "ne_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5074472"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5640350"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Omaha",
+      "finish_name": "Billings",
+      "start_state": "NE",
+      "finish_state": "MT",
+      "geodesic_miles": 703.074
+    },
+    "ne_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5074472"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5640350"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Omaha",
+      "finish_name": "Billings",
+      "start_state": "NE",
+      "finish_state": "MT",
+      "geodesic_miles": 703.074
+    },
+    "nh_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5089178"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5085520"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Manchester",
+      "finish_name": "Dover",
+      "start_state": "NH",
+      "finish_state": "NH",
+      "geodesic_miles": 32.543
+    },
+    "nh_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5089178"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5085520"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Manchester",
+      "finish_name": "Dover",
+      "start_state": "NH",
+      "finish_state": "NH",
+      "geodesic_miles": 32.543
+    },
+    "nh_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5089178"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5097598"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Manchester",
+      "finish_name": "Elizabeth",
+      "start_state": "NH",
+      "finish_state": "NJ",
+      "geodesic_miles": 214.757
+    },
+    "nh_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5089178"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5097598"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Manchester",
+      "finish_name": "Elizabeth",
+      "start_state": "NH",
+      "finish_state": "NJ",
+      "geodesic_miles": 214.757
+    },
+    "nh_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5089178"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4460243"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Manchester",
+      "finish_name": "Charlotte",
+      "start_state": "NH",
+      "finish_state": "NC",
+      "geodesic_miles": 735.1
+    },
+    "nh_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5089178"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4460243"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Manchester",
+      "finish_name": "Charlotte",
+      "start_state": "NH",
+      "finish_state": "NC",
+      "geodesic_miles": 735.1
+    },
+    "nj_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5101798"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5105496"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Newark",
+      "finish_name": "Trenton",
+      "start_state": "NJ",
+      "finish_state": "NJ",
+      "geodesic_miles": 46.736
+    },
+    "nj_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5101798"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5105496"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Newark",
+      "finish_name": "Trenton",
+      "start_state": "NJ",
+      "finish_state": "NJ",
+      "geodesic_miles": 46.736
+    },
+    "nj_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5101798"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5085688"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Newark",
+      "finish_name": "East Concord",
+      "start_state": "NJ",
+      "finish_state": "NH",
+      "geodesic_miles": 219.793
+    },
+    "nj_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5101798"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5085688"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Newark",
+      "finish_name": "East Concord",
+      "start_state": "NJ",
+      "finish_state": "NH",
+      "geodesic_miles": 219.793
+    },
+    "nj_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5101798"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4887398"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Newark",
+      "finish_name": "Chicago",
+      "start_state": "NJ",
+      "finish_state": "IL",
+      "geodesic_miles": 704.938
+    },
+    "nj_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5101798"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4887398"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Newark",
+      "finish_name": "Chicago",
+      "start_state": "NJ",
+      "finish_state": "IL",
+      "geodesic_miles": 704.938
+    },
+    "nm_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5454711"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5490263"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Albuquerque",
+      "finish_name": "Santa Fe",
+      "start_state": "NM",
+      "finish_state": "NM",
+      "geodesic_miles": 57.854
+    },
+    "nm_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5454711"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5490263"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Albuquerque",
+      "finish_name": "Santa Fe",
+      "start_state": "NM",
+      "finish_state": "NM",
+      "geodesic_miles": 57.854
+    },
+    "nm_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5454711"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5475352"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Albuquerque",
+      "finish_name": "Las Cruces",
+      "start_state": "NM",
+      "finish_state": "NM",
+      "geodesic_miles": 191.2
+    },
+    "nm_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5454711"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5475352"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Albuquerque",
+      "finish_name": "Las Cruces",
+      "start_state": "NM",
+      "finish_state": "NM",
+      "geodesic_miles": 191.2
+    },
+    "nm_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5454711"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5074472"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Albuquerque",
+      "finish_name": "Omaha",
+      "start_state": "NM",
+      "finish_state": "NE",
+      "geodesic_miles": 721.114
+    },
+    "nm_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5454711"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5074472"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Albuquerque",
+      "finish_name": "Omaha",
+      "start_state": "NM",
+      "finish_state": "NE",
+      "geodesic_miles": 721.114
+    },
+    "nv_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5506956"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5509851"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Las Vegas",
+      "finish_name": "Pahrump",
+      "start_state": "NV",
+      "finish_state": "NV",
+      "geodesic_miles": 47.376
+    },
+    "nv_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5506956"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5509851"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Las Vegas",
+      "finish_name": "Pahrump",
+      "start_state": "NV",
+      "finish_state": "NV",
+      "geodesic_miles": 47.376
+    },
+    "nv_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5506956"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5368361"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Las Vegas",
+      "finish_name": "Los Angeles",
+      "start_state": "NV",
+      "finish_state": "CA",
+      "geodesic_miles": 228.838
+    },
+    "nv_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5506956"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5368361"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Las Vegas",
+      "finish_name": "Los Angeles",
+      "start_state": "NV",
+      "finish_state": "CA",
+      "geodesic_miles": 228.838
+    },
+    "nv_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5506956"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5821086"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Las Vegas",
+      "finish_name": "Cheyenne",
+      "start_state": "NV",
+      "finish_state": "WY",
+      "geodesic_miles": 654.03
+    },
+    "nv_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5506956"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5821086"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Las Vegas",
+      "finish_name": "Cheyenne",
+      "start_state": "NV",
+      "finish_state": "WY",
+      "geodesic_miles": 654.03
+    },
+    "ny_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5128581"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5119347"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "New York City",
+      "finish_name": "Greenburgh",
+      "start_state": "NY",
+      "finish_state": "NY",
+      "geodesic_miles": 23.585
+    },
+    "ny_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5128581"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5119347"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "New York City",
+      "finish_name": "Greenburgh",
+      "start_state": "NY",
+      "finish_state": "NY",
+      "geodesic_miles": 23.585
+    },
+    "ny_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5128581"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5085688"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "New York City",
+      "finish_name": "East Concord",
+      "start_state": "NY",
+      "finish_state": "NH",
+      "geodesic_miles": 215.819
+    },
+    "ny_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5128581"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5085688"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "New York City",
+      "finish_name": "East Concord",
+      "start_state": "NY",
+      "finish_state": "NH",
+      "geodesic_miles": 215.819
+    },
+    "ny_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5128581"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4887398"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "New York City",
+      "finish_name": "Chicago",
+      "start_state": "NY",
+      "finish_state": "IL",
+      "geodesic_miles": 713.796
+    },
+    "ny_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5128581"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4887398"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "New York City",
+      "finish_name": "Chicago",
+      "start_state": "NY",
+      "finish_state": "IL",
+      "geodesic_miles": 713.796
+    },
+    "oh_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4509177"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4509884"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Columbus",
+      "finish_name": "Dayton",
+      "start_state": "OH",
+      "finish_state": "OH",
+      "geodesic_miles": 64.938
+    },
+    "oh_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4509177"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4509884"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Columbus",
+      "finish_name": "Dayton",
+      "start_state": "OH",
+      "finish_state": "OH",
+      "geodesic_miles": 64.938
+    },
+    "oh_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4509177"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5188843"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Columbus",
+      "finish_name": "Erie",
+      "start_state": "OH",
+      "finish_state": "PA",
+      "geodesic_miles": 213.409
+    },
+    "oh_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4509177"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5188843"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Columbus",
+      "finish_name": "Erie",
+      "start_state": "OH",
+      "finish_state": "PA",
+      "geodesic_miles": 213.409
+    },
+    "oh_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4509177"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4975802"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Columbus",
+      "finish_name": "Portland",
+      "start_state": "OH",
+      "finish_state": "ME",
+      "geodesic_miles": 704.622
+    },
+    "oh_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4509177"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4975802"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Columbus",
+      "finish_name": "Portland",
+      "start_state": "OH",
+      "finish_state": "ME",
+      "geodesic_miles": 704.622
+    },
+    "ok_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4544349"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4540737"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Oklahoma City",
+      "finish_name": "Lawton",
+      "start_state": "OK",
+      "finish_state": "OK",
+      "geodesic_miles": 77.203
+    },
+    "ok_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4544349"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4540737"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Oklahoma City",
+      "finish_name": "Lawton",
+      "start_state": "OK",
+      "finish_state": "OK",
+      "geodesic_miles": 77.203
+    },
+    "ok_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4544349"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4132093"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Oklahoma City",
+      "finish_name": "Springdale",
+      "start_state": "OK",
+      "finish_state": "AR",
+      "geodesic_miles": 196.549
+    },
+    "ok_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4544349"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4132093"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Oklahoma City",
+      "finish_name": "Springdale",
+      "start_state": "OK",
+      "finish_state": "AR",
+      "geodesic_miles": 196.549
+    },
+    "ok_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4544349"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Oklahoma City",
+      "finish_name": "Minneapolis",
+      "start_state": "OK",
+      "finish_state": "MN",
+      "geodesic_miles": 693.52
+    },
+    "ok_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4544349"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Oklahoma City",
+      "finish_name": "Minneapolis",
+      "start_state": "OK",
+      "finish_state": "MN",
+      "geodesic_miles": 693.52
+    },
+    "or_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5746545"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5750162"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Portland",
+      "finish_name": "Salem",
+      "start_state": "OR",
+      "finish_state": "OR",
+      "geodesic_miles": 43.749
+    },
+    "or_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5746545"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5750162"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Portland",
+      "finish_name": "Salem",
+      "start_state": "OR",
+      "finish_state": "OR",
+      "geodesic_miles": 43.749
+    },
+    "or_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5746545"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:7289169"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Portland",
+      "finish_name": "Tri-Cities",
+      "start_state": "OR",
+      "finish_state": "WA",
+      "geodesic_miles": 175.087
+    },
+    "or_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5746545"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:7289169"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Portland",
+      "finish_name": "Tri-Cities",
+      "start_state": "OR",
+      "finish_state": "WA",
+      "geodesic_miles": 175.087
+    },
+    "or_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5746545"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5640350"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Portland",
+      "finish_name": "Billings",
+      "start_state": "OR",
+      "finish_state": "MT",
+      "geodesic_miles": 685.899
+    },
+    "or_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5746545"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5640350"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Portland",
+      "finish_name": "Billings",
+      "start_state": "OR",
+      "finish_state": "MT",
+      "geodesic_miles": 685.899
+    },
+    "pa_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4560349"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5178127"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Philadelphia",
+      "finish_name": "Allentown",
+      "start_state": "PA",
+      "finish_state": "PA",
+      "geodesic_miles": 48.443
+    },
+    "pa_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4560349"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5178127"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Philadelphia",
+      "finish_name": "Allentown",
+      "start_state": "PA",
+      "finish_state": "PA",
+      "geodesic_miles": 48.443
+    },
+    "pa_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4560349"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4791259"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Philadelphia",
+      "finish_name": "Virginia Beach",
+      "start_state": "PA",
+      "finish_state": "VA",
+      "geodesic_miles": 218.302
+    },
+    "pa_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4560349"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4791259"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Philadelphia",
+      "finish_name": "Virginia Beach",
+      "start_state": "PA",
+      "finish_state": "VA",
+      "geodesic_miles": 218.302
+    },
+    "pa_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4560349"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5263045"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Philadelphia",
+      "finish_name": "Milwaukee",
+      "start_state": "PA",
+      "finish_state": "WI",
+      "geodesic_miles": 693.809
+    },
+    "pa_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4560349"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5263045"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Philadelphia",
+      "finish_name": "Milwaukee",
+      "start_state": "PA",
+      "finish_state": "WI",
+      "geodesic_miles": 693.809
+    },
+    "ri_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5224151"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:8436572"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Providence",
+      "finish_name": "South Kingstown",
+      "start_state": "RI",
+      "finish_state": "RI",
+      "geodesic_miles": 26.645
+    },
+    "ri_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5224151"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:8436572"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Providence",
+      "finish_name": "South Kingstown",
+      "start_state": "RI",
+      "finish_state": "RI",
+      "geodesic_miles": 26.645
+    },
+    "ri_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5224151"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5178127"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Providence",
+      "finish_name": "Allentown",
+      "start_state": "RI",
+      "finish_state": "PA",
+      "geodesic_miles": 228.392
+    },
+    "ri_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5224151"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5178127"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Providence",
+      "finish_name": "Allentown",
+      "start_state": "RI",
+      "finish_state": "PA",
+      "geodesic_miles": 228.392
+    },
+    "ri_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5224151"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4460243"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Providence",
+      "finish_name": "Charlotte",
+      "start_state": "RI",
+      "finish_state": "NC",
+      "geodesic_miles": 683.436
+    },
+    "ri_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5224151"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4460243"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Providence",
+      "finish_name": "Charlotte",
+      "start_state": "RI",
+      "finish_state": "NC",
+      "geodesic_miles": 683.436
+    },
+    "sc_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4575352"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4593142"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Columbia",
+      "finish_name": "Rock Hill",
+      "start_state": "SC",
+      "finish_state": "SC",
+      "geodesic_miles": 63.704
+    },
+    "sc_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4575352"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4593142"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Columbia",
+      "finish_name": "Rock Hill",
+      "start_state": "SC",
+      "finish_state": "SC",
+      "geodesic_miles": 63.704
+    },
+    "sc_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4575352"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4634946"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Columbia",
+      "finish_name": "Knoxville",
+      "start_state": "SC",
+      "finish_state": "TN",
+      "geodesic_miles": 212.265
+    },
+    "sc_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4575352"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4634946"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Columbia",
+      "finish_name": "Knoxville",
+      "start_state": "SC",
+      "finish_state": "TN",
+      "geodesic_miles": 212.265
+    },
+    "sc_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4575352"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5263045"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Columbia",
+      "finish_name": "Milwaukee",
+      "start_state": "SC",
+      "finish_state": "WI",
+      "geodesic_miles": 725.543
+    },
+    "sc_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4575352"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5263045"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Columbia",
+      "finish_name": "Milwaukee",
+      "start_state": "SC",
+      "finish_state": "WI",
+      "geodesic_miles": 725.543
+    },
+    "sd_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5231851"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5226534"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Sioux Falls",
+      "finish_name": "Brookings",
+      "start_state": "SD",
+      "finish_state": "SD",
+      "geodesic_miles": 53.117
+    },
+    "sd_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5231851"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5226534"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Sioux Falls",
+      "finish_name": "Brookings",
+      "start_state": "SD",
+      "finish_state": "SD",
+      "geodesic_miles": 53.117
+    },
+    "sd_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5231851"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5043473"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Sioux Falls",
+      "finish_name": "Rochester",
+      "start_state": "SD",
+      "finish_state": "MN",
+      "geodesic_miles": 215.501
+    },
+    "sd_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5231851"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5043473"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Sioux Falls",
+      "finish_name": "Rochester",
+      "start_state": "SD",
+      "finish_state": "MN",
+      "geodesic_miles": 215.501
+    },
+    "sd_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5231851"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4990729"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Sioux Falls",
+      "finish_name": "Detroit",
+      "start_state": "SD",
+      "finish_state": "MI",
+      "geodesic_miles": 698.16
+    },
+    "sd_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5231851"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4990729"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Sioux Falls",
+      "finish_name": "Detroit",
+      "start_state": "SD",
+      "finish_state": "MI",
+      "geodesic_miles": 698.16
+    },
+    "tn_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4644585"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4613868"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Nashville",
+      "finish_name": "Clarksville",
+      "start_state": "TN",
+      "finish_state": "TN",
+      "geodesic_miles": 40.721
+    },
+    "tn_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4644585"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4613868"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Nashville",
+      "finish_name": "Clarksville",
+      "start_state": "TN",
+      "finish_state": "TN",
+      "geodesic_miles": 40.721
+    },
+    "tn_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4644585"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4116834"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Nashville",
+      "finish_name": "Jonesboro",
+      "start_state": "TN",
+      "finish_state": "AR",
+      "geodesic_miles": 220.713
+    },
+    "tn_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4644585"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4116834"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Nashville",
+      "finish_name": "Jonesboro",
+      "start_state": "TN",
+      "finish_state": "AR",
+      "geodesic_miles": 220.713
+    },
+    "tn_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4644585"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Nashville",
+      "finish_name": "Minneapolis",
+      "start_state": "TN",
+      "finish_state": "MN",
+      "geodesic_miles": 696.646
+    },
+    "tn_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4644585"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Nashville",
+      "finish_name": "Minneapolis",
+      "start_state": "TN",
+      "finish_state": "MN",
+      "geodesic_miles": 696.646
+    },
+    "tx_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4699066"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4684724"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Houston",
+      "finish_name": "Cypress",
+      "start_state": "TX",
+      "finish_state": "TX",
+      "geodesic_miles": 24.552
+    },
+    "tx_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4699066"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4684724"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Houston",
+      "finish_name": "Cypress",
+      "start_state": "TX",
+      "finish_state": "TX",
+      "geodesic_miles": 24.552
+    },
+    "tx_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4699066"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4684888"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Houston",
+      "finish_name": "Dallas",
+      "start_state": "TX",
+      "finish_state": "TX",
+      "geodesic_miles": 224.887
+    },
+    "tx_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4699066"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4684888"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Houston",
+      "finish_name": "Dallas",
+      "start_state": "TX",
+      "finish_state": "TX",
+      "geodesic_miles": 224.887
+    },
+    "tx_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4699066"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4180439"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Houston",
+      "finish_name": "Atlanta",
+      "start_state": "TX",
+      "finish_state": "GA",
+      "geodesic_miles": 701.544
+    },
+    "tx_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4699066"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4180439"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Houston",
+      "finish_name": "Atlanta",
+      "start_state": "TX",
+      "finish_state": "GA",
+      "geodesic_miles": 701.544
+    },
+    "ut_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5780993"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5780026"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Salt Lake City",
+      "finish_name": "Provo",
+      "start_state": "UT",
+      "finish_state": "UT",
+      "geodesic_miles": 38.366
+    },
+    "ut_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5780993"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5780026"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Salt Lake City",
+      "finish_name": "Provo",
+      "start_state": "UT",
+      "finish_state": "UT",
+      "geodesic_miles": 38.366
+    },
+    "ut_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5780993"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5596475"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Salt Lake City",
+      "finish_name": "Idaho Falls",
+      "start_state": "UT",
+      "finish_state": "ID",
+      "geodesic_miles": 186.897
+    },
+    "ut_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5780993"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5596475"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Salt Lake City",
+      "finish_name": "Idaho Falls",
+      "start_state": "UT",
+      "finish_state": "ID",
+      "geodesic_miles": 186.897
+    },
+    "ut_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5780993"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5809844"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Salt Lake City",
+      "finish_name": "Seattle",
+      "start_state": "UT",
+      "finish_state": "WA",
+      "geodesic_miles": 700.64
+    },
+    "ut_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5780993"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5809844"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Salt Lake City",
+      "finish_name": "Seattle",
+      "start_state": "UT",
+      "finish_state": "WA",
+      "geodesic_miles": 700.64
+    },
+    "va_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4791259"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4776024"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Virginia Beach",
+      "finish_name": "Newport News",
+      "start_state": "VA",
+      "finish_state": "VA",
+      "geodesic_miles": 26.513
+    },
+    "va_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4791259"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4776024"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Virginia Beach",
+      "finish_name": "Newport News",
+      "start_state": "VA",
+      "finish_state": "VA",
+      "geodesic_miles": 26.513
+    },
+    "va_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4791259"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4469146"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Virginia Beach",
+      "finish_name": "Greensboro",
+      "start_state": "VA",
+      "finish_state": "NC",
+      "geodesic_miles": 219.114
+    },
+    "va_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4791259"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4469146"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Virginia Beach",
+      "finish_name": "Greensboro",
+      "start_state": "VA",
+      "finish_state": "NC",
+      "geodesic_miles": 219.114
+    },
+    "va_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4791259"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4887398"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Virginia Beach",
+      "finish_name": "Chicago",
+      "start_state": "VA",
+      "finish_state": "IL",
+      "geodesic_miles": 712.996
+    },
+    "va_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4791259"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4887398"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Virginia Beach",
+      "finish_name": "Chicago",
+      "start_state": "VA",
+      "finish_state": "IL",
+      "geodesic_miles": 712.996
+    },
+    "vt_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5234372"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5240509"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Burlington",
+      "finish_name": "Rutland",
+      "start_state": "VT",
+      "finish_state": "VT",
+      "geodesic_miles": 60.918
+    },
+    "vt_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5234372"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5240509"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Burlington",
+      "finish_name": "Rutland",
+      "start_state": "VT",
+      "finish_state": "VT",
+      "geodesic_miles": 60.918
+    },
+    "vt_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5234372"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4957280"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Burlington",
+      "finish_name": "Bangor",
+      "start_state": "VT",
+      "finish_state": "ME",
+      "geodesic_miles": 219.974
+    },
+    "vt_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5234372"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4957280"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Burlington",
+      "finish_name": "Bangor",
+      "start_state": "VT",
+      "finish_state": "ME",
+      "geodesic_miles": 219.974
+    },
+    "vt_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5234372"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Burlington",
+      "finish_name": "Indianapolis",
+      "start_state": "VT",
+      "finish_state": "IN",
+      "geodesic_miles": 739.15
+    },
+    "vt_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5234372"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Burlington",
+      "finish_name": "Indianapolis",
+      "start_state": "VT",
+      "finish_state": "IN",
+      "geodesic_miles": 739.15
+    },
+    "wa_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5809844"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5812944"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Seattle",
+      "finish_name": "Tacoma",
+      "start_state": "WA",
+      "finish_state": "WA",
+      "geodesic_miles": 24.97
+    },
+    "wa_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5809844"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5812944"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Seattle",
+      "finish_name": "Tacoma",
+      "start_state": "WA",
+      "finish_state": "WA",
+      "geodesic_miles": 24.97
+    },
+    "wa_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5809844"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5811696"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Seattle",
+      "finish_name": "Spokane",
+      "start_state": "WA",
+      "finish_state": "WA",
+      "geodesic_miles": 228.952
+    },
+    "wa_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5809844"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5811696"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Seattle",
+      "finish_name": "Spokane",
+      "start_state": "WA",
+      "finish_state": "WA",
+      "geodesic_miles": 228.952
+    },
+    "wa_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5809844"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5780993"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Seattle",
+      "finish_name": "Salt Lake City",
+      "start_state": "WA",
+      "finish_state": "UT",
+      "geodesic_miles": 700.64
+    },
+    "wa_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5809844"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5780993"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Seattle",
+      "finish_name": "Salt Lake City",
+      "start_state": "WA",
+      "finish_state": "UT",
+      "geodesic_miles": 700.64
+    },
+    "wi_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5263045"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5261457"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Milwaukee",
+      "finish_name": "Madison",
+      "start_state": "WI",
+      "finish_state": "WI",
+      "geodesic_miles": 75.702
+    },
+    "wi_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5263045"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5261457"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Milwaukee",
+      "finish_name": "Madison",
+      "start_state": "WI",
+      "finish_state": "WI",
+      "geodesic_miles": 75.702
+    },
+    "wi_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5263045"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4984247"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Milwaukee",
+      "finish_name": "Ann Arbor",
+      "start_state": "WI",
+      "finish_state": "MI",
+      "geodesic_miles": 218.608
+    },
+    "wi_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5263045"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4984247"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Milwaukee",
+      "finish_name": "Ann Arbor",
+      "start_state": "WI",
+      "finish_state": "MI",
+      "geodesic_miles": 218.608
+    },
+    "wi_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5263045"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4560349"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Milwaukee",
+      "finish_name": "Philadelphia",
+      "start_state": "WI",
+      "finish_state": "PA",
+      "geodesic_miles": 693.809
+    },
+    "wi_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5263045"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4560349"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Milwaukee",
+      "finish_name": "Philadelphia",
+      "start_state": "WI",
+      "finish_state": "PA",
+      "geodesic_miles": 693.809
+    },
+    "wv_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4809537"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4801859"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Huntington",
+      "finish_name": "Charleston",
+      "start_state": "WV",
+      "finish_state": "WV",
+      "geodesic_miles": 44.372
+    },
+    "wv_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4809537"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4801859"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Huntington",
+      "finish_name": "Charleston",
+      "start_state": "WV",
+      "finish_state": "WV",
+      "geodesic_miles": 44.372
+    },
+    "wv_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4809537"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Huntington",
+      "finish_name": "Indianapolis",
+      "start_state": "WV",
+      "finish_state": "IN",
+      "geodesic_miles": 220.197
+    },
+    "wv_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4809537"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:4259418"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Huntington",
+      "finish_name": "Indianapolis",
+      "start_state": "WV",
+      "finish_state": "IN",
+      "geodesic_miles": 220.197
+    },
+    "wv_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4809537"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Huntington",
+      "finish_name": "Minneapolis",
+      "start_state": "WV",
+      "finish_state": "MN",
+      "geodesic_miles": 718.72
+    },
+    "wv_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:4809537"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5037649"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Huntington",
+      "finish_name": "Minneapolis",
+      "start_state": "WV",
+      "finish_state": "MN",
+      "geodesic_miles": 718.72
+    },
+    "wy_short_5": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5821086"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5830062"
+      },
+      "initial_fuel_gallons": "5",
+      "reserve_gallons": "1",
+      "stratum": "short",
+      "start_name": "Cheyenne",
+      "finish_name": "Laramie",
+      "start_state": "WY",
+      "finish_state": "WY",
+      "geodesic_miles": 41.867
+    },
+    "wy_short_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5821086"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5830062"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "short",
+      "start_name": "Cheyenne",
+      "finish_name": "Laramie",
+      "start_state": "WY",
+      "finish_state": "WY",
+      "geodesic_miles": 41.867
+    },
+    "wy_regional_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5821086"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5826027"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Cheyenne",
+      "finish_name": "Gillette",
+      "start_state": "WY",
+      "finish_state": "WY",
+      "geodesic_miles": 220.26
+    },
+    "wy_regional_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5821086"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5826027"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regional",
+      "start_name": "Cheyenne",
+      "finish_name": "Gillette",
+      "start_state": "WY",
+      "finish_state": "WY",
+      "geodesic_miles": 220.26
+    },
+    "wy_long_20": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5821086"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5308655"
+      },
+      "initial_fuel_gallons": "20",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Cheyenne",
+      "finish_name": "Phoenix",
+      "start_state": "WY",
+      "finish_state": "AZ",
+      "geodesic_miles": 663.58
+    },
+    "wy_long_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5821086"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5308655"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "long",
+      "start_name": "Cheyenne",
+      "finish_name": "Phoenix",
+      "start_state": "WY",
+      "finish_state": "AZ",
+      "geodesic_miles": 663.58
+    },
+    "oakland_fresno_10": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5378538"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5350937"
+      },
+      "initial_fuel_gallons": "10",
+      "reserve_gallons": "2",
+      "stratum": "regression",
+      "start_name": "Oakland",
+      "finish_name": "Fresno",
+      "start_state": "CA",
+      "finish_state": "CA",
+      "geodesic_miles": 155.77
+    },
+    "oakland_fresno_50": {
+      "start": {
+        "type": "place_id",
+        "id": "geonames:5378538"
+      },
+      "finish": {
+        "type": "place_id",
+        "id": "geonames:5350937"
+      },
+      "initial_fuel_gallons": "50",
+      "reserve_gallons": "2",
+      "stratum": "regression",
+      "start_name": "Oakland",
+      "finish_name": "Fresno",
+      "start_state": "CA",
+      "finish_state": "CA",
+      "geodesic_miles": 155.77
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.venv/
+.env
+.env.*
+!.env.example
+.coverage*
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# Runtime assets and private development records.
+var/
+*.py[cod]
+data/prepared/
+data/raw/*.csv
+!data/raw/fuel-prices-for-be-assessment.csv

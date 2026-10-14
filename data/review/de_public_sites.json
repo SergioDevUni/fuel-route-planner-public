@@ -1,0 +1,49 @@
+{
+  "source_sha256": "c704371f141ded9c54df6c32d488a0ba2ceb589f88c936c967daa5330e0cd241",
+  "state": "DE",
+  "overture_release": "2026-09-23.1",
+  "overture_catalog_sha256": "c27a74406c1846ac807370191389a9b8f97c50d6ca31e9c3240699110e6d887b",
+  "public_source_url": "https://doverkentmpo.delaware.gov/files/2024/10/Truck_Flyer_2024-compressed.pdf",
+  "public_source_sha256": "c4a5c5953fb07f25e34976cb49a2a63fc259e204935d84f3b8769ce455899555",
+  "records": [
+    {
+      "opis_id": "77",
+      "csv_name": "OASIS TRAVEL PLAZA",
+      "csv_city": "Laurel",
+      "public_name": "Oasis Travel Plaza",
+      "public_address": "30759 Sussex Hwy",
+      "public_city": "Laurel",
+      "public_postcode": "19956",
+      "overture_name": "Oasis Travel Plaza",
+      "latitude": 38.5605,
+      "longitude": -75.5587,
+      "overture_id": "03043a69-68d5-4764-bcdd-486cbfdd6122"
+    },
+    {
+      "opis_id": "79",
+      "csv_name": "DELAWARE TRUCK PLAZA",
+      "csv_city": "New Castle",
+      "public_name": "Delaware Truck Plaza",
+      "public_address": "194 S Dupont Hwy",
+      "public_city": "New Castle",
+      "public_postcode": "19709",
+      "overture_name": "Delaware Truck Plaza",
+      "latitude": 39.6563,
+      "longitude": -75.6162,
+      "overture_id": "859ce874-cad1-40f4-a162-e0bbddb0f4e6"
+    },
+    {
+      "opis_id": "63579",
+      "csv_name": "301 PLAZA",
+      "csv_city": "Middletown",
+      "public_name": "301 Plaza",
+      "public_address": "921 Middletown Warwick Rd",
+      "public_city": "Middletown",
+      "public_postcode": "19709",
+      "overture_name": "301 Travel Plaza & Restaurant",
+      "latitude": 39.4384,
+      "longitude": -75.755,
+      "overture_id": "c73b1bba-13a0-4b3e-a798-4844d94f0360"
+    }
+  ]
+}

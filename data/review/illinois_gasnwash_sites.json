@@ -1,0 +1,34 @@
+{
+  "source_sha256": "c704371f141ded9c54df6c32d488a0ba2ceb589f88c936c967daa5330e0cd241",
+  "overture_catalog_sha256": "fb0b241bc8345766c0597dda2ae8b897d586775ba2156a29db7f502892100f8c",
+  "records": [
+    {
+      "opis_id": "70433",
+      "csv_name": "GAS N WASH",
+      "csv_city": "Plainfield",
+      "csv_address": "SR-126",
+      "source_url": "https://webapps.sfm.illinois.gov/ustsearch/Facility.aspx?ID=2046227",
+      "source_file": "illinois_gasnwash_plainfield.html",
+      "source_sha256": "952c39fdd9aeb9d730d40c5752a079950d6ec8b80bff08198c370d8bd6369d9b",
+      "source_address": "25653 W. Lockport Road Plainfield, IL 60544",
+      "overture_id": "4ae95c4c-78b2-484f-bc4d-3c99ee475e16",
+      "site_id": "overture:4ae95c4c-78b2-484f-bc4d-3c99ee475e16",
+      "latitude": 41.60702455,
+      "longitude": -88.24141963
+    },
+    {
+      "opis_id": "71682",
+      "csv_name": "Gas N Wash",
+      "csv_city": "Alsip",
+      "csv_address": "SR 83, SR 50, I-294",
+      "source_url": "https://webapps.sfm.illinois.gov/ustsearch/Facility.aspx?ID=2047287",
+      "source_file": "illinois_gasnwash_alsip.html",
+      "source_sha256": "ababe997bd0cd89910abf11a398a6b21d3508079ee6b167ec62af5f8ed71dabc",
+      "source_address": "4361 W. 127th Street Alsip, IL 60803",
+      "overture_id": "5e64077b-1b1d-41d1-a37a-e0d0bc4f67bb",
+      "site_id": "overture:5e64077b-1b1d-41d1-a37a-e0d0bc4f67bb",
+      "latitude": 41.66159776,
+      "longitude": -87.72857887
+    }
+  ]
+}

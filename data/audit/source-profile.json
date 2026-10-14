@@ -1,0 +1,250 @@
+{
+  "audit_date": "2026-10-07",
+  "source_filename": "fuel-prices-for-be-assessment.csv",
+  "sha256": "c704371f141ded9c54df6c32d488a0ba2ceb589f88c936c967daa5330e0cd241",
+  "bytes": 577081,
+  "columns": [
+    "OPIS Truckstop ID",
+    "Truckstop Name",
+    "Address",
+    "City",
+    "State",
+    "Rack ID",
+    "Retail Price"
+  ],
+  "row_count": 8151,
+  "unique_station_ids": 6738,
+  "duplicate_id_groups": 678,
+  "exact_duplicate_excess_rows": 26,
+  "us_row_count": 7531,
+  "us_unique_station_ids": 6626,
+  "non_us_row_count": 620,
+  "non_us_unique_station_ids": 112,
+  "state_row_counts": {
+    "AB": 180,
+    "AL": 170,
+    "AR": 125,
+    "AZ": 163,
+    "BC": 121,
+    "CA": 16,
+    "CO": 103,
+    "CT": 27,
+    "DE": 18,
+    "FL": 220,
+    "GA": 311,
+    "IA": 233,
+    "ID": 65,
+    "IL": 774,
+    "IN": 238,
+    "KS": 132,
+    "KY": 122,
+    "LA": 196,
+    "MA": 44,
+    "MB": 42,
+    "MD": 64,
+    "ME": 30,
+    "MI": 327,
+    "MN": 175,
+    "MO": 250,
+    "MS": 141,
+    "MT": 44,
+    "NB": 4,
+    "NC": 195,
+    "ND": 59,
+    "NE": 111,
+    "NH": 23,
+    "NJ": 112,
+    "NM": 107,
+    "NS": 6,
+    "NV": 71,
+    "NY": 158,
+    "OH": 263,
+    "OK": 182,
+    "ON": 217,
+    "OR": 29,
+    "PA": 217,
+    "QC": 6,
+    "RI": 2,
+    "SC": 182,
+    "SD": 62,
+    "SK": 36,
+    "TN": 162,
+    "TX": 790,
+    "UT": 98,
+    "VA": 205,
+    "VT": 16,
+    "WA": 97,
+    "WI": 297,
+    "WV": 39,
+    "WY": 66,
+    "YT": 8
+  },
+  "us_state_codes_missing": [
+    "AK",
+    "DC",
+    "HI"
+  ],
+  "blank_fields": {
+    "OPIS Truckstop ID": 0,
+    "Truckstop Name": 0,
+    "Address": 0,
+    "City": 0,
+    "State": 0,
+    "Rack ID": 0,
+    "Retail Price": 0
+  },
+  "invalid_price_source_lines": [],
+  "minimum_price": "2.68733333",
+  "maximum_price": "6.399",
+  "maximum_price_decimal_places": 8,
+  "duplicate_id_conflict_counts": {
+    "Truckstop Name": 226,
+    "Address": 0,
+    "City": 0,
+    "State": 0,
+    "Rack ID": 0,
+    "Retail Price": 597
+  },
+  "us_duplicate_id_price_conflicts": 487,
+  "duplicate_id_conflict_sample_ids": {
+    "Truckstop Name": [
+      "20",
+      "159",
+      "203",
+      "235",
+      "509",
+      "572",
+      "906",
+      "977",
+      "1043",
+      "1075"
+    ],
+    "Address": [],
+    "City": [],
+    "State": [],
+    "Rack ID": [],
+    "Retail Price": [
+      "105",
+      "128",
+      "135",
+      "203",
+      "235",
+      "269",
+      "358",
+      "368",
+      "557",
+      "572"
+    ]
+  },
+  "price_conflict_examples": [
+    {
+      "station_id": "105",
+      "rows": 6,
+      "prices": [
+        "3.269",
+        "3.289",
+        "3.299",
+        "3.339",
+        "3.399",
+        "3.429"
+      ],
+      "locations": [
+        "I-75, EXIT 144-B | Bridgeport | MI"
+      ]
+    },
+    {
+      "station_id": "128",
+      "rows": 3,
+      "prices": [
+        "3.349",
+        "3.399",
+        "3.549"
+      ],
+      "locations": [
+        "I-57 & I-70, EXIT 159 | Effingham                                | IL"
+      ]
+    },
+    {
+      "station_id": "135",
+      "rows": 3,
+      "prices": [
+        "3.389",
+        "3.449",
+        "3.589"
+      ],
+      "locations": [
+        "I-80, EXIT 27 | Atkinson | IL"
+      ]
+    },
+    {
+      "station_id": "203",
+      "rows": 2,
+      "prices": [
+        "3.799",
+        "3.829"
+      ],
+      "locations": [
+        "I-80/94, EXIT 2 | Highland | IN"
+      ]
+    },
+    {
+      "station_id": "235",
+      "rows": 2,
+      "prices": [
+        "3.359",
+        "3.41233333"
+      ],
+      "locations": [
+        "I-75, EXIT 358 | Ocala | FL"
+      ]
+    }
+  ],
+  "largest_id_groups": [
+    {
+      "station_id": "105",
+      "rows": 6
+    },
+    {
+      "station_id": "20129",
+      "rows": 6
+    },
+    {
+      "station_id": "4563",
+      "rows": 6
+    },
+    {
+      "station_id": "4885",
+      "rows": 6
+    },
+    {
+      "station_id": "52493",
+      "rows": 6
+    },
+    {
+      "station_id": "52692",
+      "rows": 6
+    },
+    {
+      "station_id": "60857",
+      "rows": 6
+    },
+    {
+      "station_id": "61978",
+      "rows": 6
+    },
+    {
+      "station_id": "61996",
+      "rows": 6
+    },
+    {
+      "station_id": "61998",
+      "rows": 6
+    }
+  ],
+  "geocoded": false,
+  "notes": [
+    "US filtering uses 50 state abbreviations plus DC.",
+    "Conflict counts compare trimmed uppercase text; price conflict examples compare Decimal values.",
+    "No fuel type, currency, unit, observation timestamp, latitude, or longitude columns exist."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "source_release": "2026-09-23.1",
+  "review_date": "2026-10-07",
+  "scope": "eight Chicago/Joliet regional pilot identities",
+  "records": [
+    {
+      "opis_id": "1653",
+      "overture_id": "0880a517-28b1-46bb-b6f7-bd64185fe298",
+      "status": "site_verified",
+      "expected_address": "3401 S California Ave",
+      "evidence_url": "https://www.roadrangerusa.com/locations-amenities/station-codes",
+      "evidence": "Operator lists store 187, 3401 S California Ave, and OPIS 1653.",
+      "discrepancy": "CSV says I-55 exit 289; operator store page says exit 288."
+    },
+    {
+      "opis_id": "63946",
+      "overture_id": "1dc3cc76-20b8-43c0-81ec-85455a5c7096",
+      "status": "site_verified",
+      "expected_address": "17100 W Laraway Rd",
+      "evidence_url": "https://www.jjgaming.com/location_page/minit-mart-store-600644-joliet/",
+      "evidence": "On-site gaming partner lists Minit Mart store 600644 at 17100 W Laraway Rd.",
+      "discrepancy": "CSV has only I-80 exit 134; street address comes from partner."
+    },
+    {
+      "opis_id": "69566",
+      "overture_id": "93a87e8e-4e3d-460d-81bc-82e8c3a723ef",
+      "status": "site_verified",
+      "expected_address": "40 E Laraway Rd",
+      "evidence_url": "https://locations.pilotflyingj.com/us/il/joliet/40-e-laraway-rd",
+      "evidence": "Operator lists Pilot Travel Center 1024 at 40 E Laraway Rd and publishes site coordinates.",
+      "discrepancy": "Correct Overture POI fell outside the initial top-eight name-similarity shortlist."
+    },
+    {
+      "opis_id": "69596",
+      "overture_id": "1fdf6206-c5f2-4f72-b03c-5a7aad74e0c7",
+      "status": "site_verified",
+      "expected_address": "885 East Touhy Avenue",
+      "evidence_url": "https://www.illinoislottery.com/dbg/results/megamillions/draw/2629",
+      "additional_evidence_urls": [
+        "https://agr.illinois.gov/content/dam/soi/en/web/agr/consumers/weightsmeasures/documents/motor-fuel-dispensers-cook-and-collar-counties.pdf"
+      ],
+      "evidence": "Illinois Lottery names Speedway 4250 at 885 E Touhy; Illinois Agriculture fuel-dispenser register also records Speedway at 885 E Touhy.",
+      "discrepancy": "Illinois Fire Marshal tank registry lists the same Speedway 4250 at 855 E Touhy. Physical site identity at 885 is corroborated; registry number conflict remains documented."
+    },
+    {
+      "opis_id": "69683",
+      "overture_id": "e33713a1-777d-485a-a231-f33148f74daa",
+      "status": "site_verified",
+      "expected_address": "6401 W 65th St",
+      "evidence_url": "https://www.elections.il.gov/campaigndisclosure/ItemizedExpenditurePrint.aspx?ExpenditureType=7PO3RGHF2W%2FsyStv1naW9vd6PLmRT8u2mEDnPt%2BcsAk%3D&FiledDocID=FAFHEdXcCLPwih1laTmPeg%3D%3D&SortColumn=1Y89UUDi2Uvufqwo5rcKxTZVZiAHTVOE&SortDirection=Gl5sibpnFrQ%3D",
+      "evidence": "Illinois expenditure record identifies Good To Go 88 at 6401 W 65th St as a fuel merchant.",
+      "discrepancy": "CSV city is Chicago; site and Overture address are Bedford Park."
+    },
+    {
+      "opis_id": "70034",
+      "overture_id": "4d633521-8e95-4ad9-b5c6-f0acf3612aa9",
+      "status": "site_verified",
+      "expected_address": "6800 S Archer Rd",
+      "evidence_url": "https://agr.illinois.gov/content/dam/soi/en/web/agr/consumers/weightsmeasures/documents/motor-fuel-dispensers-cook-and-collar-counties.pdf",
+      "evidence": "Illinois motor-fuel dispenser register lists Speedway 8799 at 6800 S Archer, Bedford Park.",
+      "discrepancy": "CSV gives highway exit rather than street address."
+    },
+    {
+      "opis_id": "70666",
+      "overture_id": "025efa9a-7cf6-40f9-9ed4-9dfc410160e2",
+      "status": "site_verified",
+      "expected_address": "3450 S California Ave",
+      "evidence_url": "https://www.mythorntons.com/locations/",
+      "evidence": "Operator lists Thorntons 322 at 3450 S California Ave, Chicago.",
+      "discrepancy": "CSV gives I-55 exit 288 instead of the street address."
+    },
+    {
+      "opis_id": "71318",
+      "overture_id": "bee8f812-46f1-4b7a-af71-5320c3b8dc36",
+      "status": "site_verified",
+      "expected_address": "1900 Busse Rd",
+      "evidence_url": "https://www.loves.com/locations/il/elk-grove-village/loves-travel-stop-elk-grove-village-800",
+      "evidence": "Operator lists Love's store 800 at 1900 Busse Rd and explicitly lists OPIS 71318.",
+      "discrepancy": "Overture category is travel_service, not gas_station."
+    }
+  ]
+}

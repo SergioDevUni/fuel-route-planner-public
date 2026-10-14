@@ -1,0 +1,39 @@
+name: fuel-route-planner
+services:
+  api:
+    build:
+      context: .
+      target: runtime
+    image: fuel-route-planner:candidate
+    ports:
+      - "127.0.0.1:${FUEL_PORT:-8000}:8000"
+    environment:
+      FUEL_CONTAINER_MODE: local
+      DJANGO_DEBUG: "0"
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:?Set a persistent DJANGO_SECRET_KEY}
+      DJANGO_ALLOWED_HOSTS: localhost,127.0.0.1,[::1]
+      ORS_API_KEY: ${ORS_API_KEY:?Set ORS_API_KEY}
+    volumes:
+      - runtime:/app/var
+      - prepared:/app/data
+    cpus: ${FUEL_CONTAINER_CPUS:-4}
+    mem_limit: ${FUEL_CONTAINER_MEMORY:-2g}
+    stop_grace_period: 35s
+    init: true
+    security_opt:
+      - no-new-privileges:true
+  verify:
+    profiles: [verify]
+    build:
+      context: .
+      target: verification
+    environment:
+      DJANGO_SETTINGS_MODULE: config.settings
+      DJANGO_DEBUG: "1"
+      ORS_API_KEY: offline-readiness-sentinel
+    cpus: ${FUEL_CONTAINER_CPUS:-4}
+    mem_limit: ${FUEL_CONTAINER_MEMORY:-2g}
+    command: [python, -m, scripts.verify_container_install]
+volumes:
+  runtime:
+  prepared:

@@ -1,0 +1,44 @@
+{
+  "review_date": "2026-10-07",
+  "scope": "CSV-authoritative store links for distinct Love's sites at Green River Exit 160",
+  "independent_registry_url": "https://abs.utah.gov/wp-content/uploads/licensee_list.pdf",
+  "sites": [
+    {
+      "site_id": "loves:ut:green-river:119",
+      "store_number": "119",
+      "operator_url": "https://www.loves.com/locations/ut/green-river/loves-country-store-green-river-119",
+      "operator_address": "1775 W Main Street",
+      "registry_address": "1775 W MAIN",
+      "city": "Green River",
+      "state": "UT",
+      "phone": "(435) 564-3302",
+      "latitude": 38.99462,
+      "longitude": -110.183997,
+      "operator_opis_ids": [],
+      "access_status": "pending_check"
+    },
+    {
+      "site_id": "loves:ut:green-river:792",
+      "store_number": "792",
+      "operator_url": "https://www.loves.com/locations/ut/green-river/loves-travel-stop-green-river-792",
+      "operator_address": "1810 Main Street",
+      "registry_address": "1880 W MAIN ST",
+      "city": "Green River",
+      "state": "UT",
+      "phone": "(435) 564-8262",
+      "latitude": 38.995129,
+      "longitude": -110.185162,
+      "operator_opis_ids": [70793],
+      "access_status": "pending_check"
+    }
+  ],
+  "source_rows": [
+    {"row_number": 345, "opis_id": "1914", "store_number": "792", "price": "3.709"},
+    {"row_number": 6294, "opis_id": "70793", "store_number": "119", "price": "3.299"},
+    {"row_number": 6295, "opis_id": "70793", "store_number": "119", "price": "3.391"}
+  ],
+  "source_links": [
+    {"opis_id": "1914", "site_id": "loves:ut:green-river:792", "status": "csv_store_match"},
+    {"opis_id": "70793", "site_id": "loves:ut:green-river:119", "status": "csv_store_match"}
+  ]
+}

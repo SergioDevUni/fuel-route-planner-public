@@ -1,0 +1,393 @@
+openapi: 3.1.0
+info:
+  title: Fuel Route Planner API
+  version: "1.0"
+  description: >-
+    US trip planning with fuel offers and prices from the supplied CSV.
+    Returns a verified road route, fuel purchases, purchase costs, and a saved map URL.
+servers:
+  - url: http://127.0.0.1:8000
+paths:
+  /health/live:
+    get:
+      summary: Process liveness
+      responses:
+        "200":
+          description: Process is running
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status: { type: string, const: live }
+  /health/ready:
+    get:
+      summary: Dataset and routing configuration readiness
+      responses:
+        "200":
+          description: Ready to serve trips
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status: { type: string, const: ready }
+        "503":
+          description: Dataset or routing configuration is not ready
+  /api/v1/trips:
+    post:
+      summary: Create or reuse a verified fuel plan
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TripRequest"
+            examples:
+              fuel_stop:
+                value:
+                  start:
+                    type: coordinates
+                    latitude: 38.995
+                    longitude: -110.17
+                  finish:
+                    type: city
+                    city: Price
+                    state: UT
+                  initial_fuel_gallons: "1"
+                  initial_fuel_price_per_gallon: "3.20"
+                  optimization_mode: balanced
+                  max_extra_duration_minutes: "30"
+      responses:
+        "200":
+          description: Verified or zero-distance plan saved
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CreatedTrip"
+        "400": { $ref: "#/components/responses/Error" }
+        "413": { $ref: "#/components/responses/Error" }
+        "415": { $ref: "#/components/responses/Error" }
+        "422": { $ref: "#/components/responses/Error" }
+        "429": { $ref: "#/components/responses/Error" }
+        "405": { $ref: "#/components/responses/Error" }
+        "500": { $ref: "#/components/responses/Error" }
+        "502": { $ref: "#/components/responses/Error" }
+        "503":
+          description: Routing/dataset unavailable or PLANNING_BUSY when admission is full
+          headers:
+            Retry-After:
+              description: Present for PLANNING_BUSY; retry hint in seconds
+              schema: { type: string }
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorEnvelope"
+        "504": { $ref: "#/components/responses/Error" }
+  /api/v1/trips/{trip_id}:
+    get:
+      summary: Retrieve a saved result using its opaque bearer token
+      security:
+        - resultToken: []
+      parameters:
+        - $ref: "#/components/parameters/TripId"
+      responses:
+        "200":
+          description: Saved plan without the access token
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SavedTrip"
+        "404": { $ref: "#/components/responses/Error" }
+        "410": { $ref: "#/components/responses/Error" }
+        "405": { $ref: "#/components/responses/Error" }
+        "429": { $ref: "#/components/responses/Error" }
+        "503": { $ref: "#/components/responses/Error" }
+        "500": { $ref: "#/components/responses/Error" }
+  /maps/{trip_id}:
+    get:
+      summary: Open the map shell; the URL fragment token stays in the browser
+      parameters:
+        - $ref: "#/components/parameters/TripId"
+      responses:
+        "200":
+          description: HTML map shell, which fetches the saved result separately
+          content:
+            text/html:
+              schema: { type: string }
+        "405": { $ref: "#/components/responses/Error" }
+        "429": { $ref: "#/components/responses/Error" }
+        "500": { $ref: "#/components/responses/Error" }
+components:
+  securitySchemes:
+    resultToken:
+      type: http
+      scheme: bearer
+      description: Opaque result_token from POST /api/v1/trips.
+  parameters:
+    TripId:
+      name: trip_id
+      in: path
+      required: true
+      schema: { type: string }
+  responses:
+    Error:
+      description: Request guidance and service response
+      headers:
+        X-Request-ID:
+          description: Server-generated request correlation ID; also on successful responses.
+          schema: { type: string }
+        Retry-After:
+          description: Present on RATE_LIMITED and PLANNING_BUSY responses.
+          schema: { type: string }
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorEnvelope"
+  schemas:
+    ErrorEnvelope:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          required: [code, message, request_id]
+          properties:
+            code: { type: string }
+            message: { type: string }
+            request_id: { type: string }
+    CoordinatesLocation:
+      type: object
+      additionalProperties: false
+      required: [type, latitude, longitude]
+      properties:
+        type: { type: string, const: coordinates }
+        latitude: { type: number, minimum: -90, maximum: 90 }
+        longitude: { type: number, minimum: -180, maximum: 180 }
+    CityLocation:
+      type: object
+      additionalProperties: false
+      required: [type, city, state]
+      properties:
+        type: { type: string, const: city }
+        city: { type: string, maxLength: 200 }
+        state: { type: string }
+    PlaceIdLocation:
+      type: object
+      additionalProperties: false
+      required: [type, id]
+      properties:
+        type: { type: string, const: place_id }
+        id: { type: string }
+    Location:
+      oneOf:
+        - $ref: "#/components/schemas/CoordinatesLocation"
+        - $ref: "#/components/schemas/CityLocation"
+        - $ref: "#/components/schemas/PlaceIdLocation"
+    DecimalInput:
+      description: Finite decimal, at most eight fractional places and thirteen integer digits.
+      oneOf:
+        - { type: string }
+        - { type: number }
+    TripRequest:
+      type: object
+      additionalProperties: false
+      required: [start, finish]
+      properties:
+        start: { $ref: "#/components/schemas/Location" }
+        finish: { $ref: "#/components/schemas/Location" }
+        initial_fuel_gallons: { $ref: "#/components/schemas/DecimalInput" }
+        initial_fuel_price_per_gallon:
+          $ref: "#/components/schemas/DecimalInput"
+        reserve_gallons: { $ref: "#/components/schemas/DecimalInput" }
+        max_detour_miles: { $ref: "#/components/schemas/DecimalInput" }
+        max_detour_ratio: { $ref: "#/components/schemas/DecimalInput" }
+        optimization_mode:
+          type: string
+          enum: [balanced, lowest_fuel_cost]
+          default: balanced
+          description: >-
+            balanced favors a good verified trip within the preferred improvement
+            window. lowest_fuel_cost uses more of the same hard request deadline
+            to improve fuel purchases. Both enforce the same fuel, road and
+            driving constraints; additional search does not guarantee a global minimum.
+        max_extra_duration_minutes:
+          allOf:
+            - $ref: "#/components/schemas/DecimalInput"
+          description: Defaults to 30 and cannot exceed 30.
+    SavedTrip:
+      type: object
+      required: [schema_version, trip_id, expires_at, status, start, finish, route, fuel_stops, costs, assumptions]
+      properties:
+        schema_version: { type: string, const: "1.0" }
+        trip_id: { type: string, minLength: 1 }
+        expires_at: { type: string, format: date-time }
+        status:
+          type: string
+          enum: [verified, zero_distance]
+        start: { $ref: "#/components/schemas/ResolvedLocation" }
+        finish: { $ref: "#/components/schemas/ResolvedLocation" }
+        route: { $ref: "#/components/schemas/Route" }
+        fuel_stops:
+          type: array
+          items: { $ref: "#/components/schemas/FuelStop" }
+        costs: { $ref: "#/components/schemas/Costs" }
+        assumptions:
+          type: object
+          required: [optimization_mode, max_extra_duration_minutes]
+          properties:
+            optimization_mode: { enum: [balanced, lowest_fuel_cost] }
+            max_extra_duration_minutes: { $ref: "#/components/schemas/NonnegativeDecimal" }
+      allOf:
+        - if:
+            properties: { status: { const: verified } }
+          then:
+            required: [vehicle]
+            properties:
+              vehicle: { $ref: "#/components/schemas/Vehicle" }
+              route:
+                required: [baseline_distance_miles, extra_distance_miles]
+                properties:
+                  geometry:
+                    properties: { type: { const: LineString } }
+                  legs: { minItems: 1 }
+              costs:
+                required: [fuel_purchased_gallons, fuel_consumed_gallons, initial_fuel_unit_price, initial_fuel_price_basis, is_estimate]
+              assumptions:
+                required: [road_legs_verified, station_selection, fuel_product]
+                properties:
+                  road_legs_verified: { const: true }
+                  station_selection: { type: string }
+                  fuel_product: { const: unspecified_assumed_compatible }
+          else:
+            properties:
+              route:
+                properties:
+                  geometry:
+                    properties: { type: { const: Point } }
+                  distance_miles: { const: "0.00000000" }
+                  duration_seconds: { const: "0.00000000" }
+                  baseline_duration_seconds: { const: "0.00000000" }
+                  extra_duration_seconds: { const: "0.00000000" }
+                  legs: { maxItems: 0 }
+              fuel_stops: { maxItems: 0 }
+              costs:
+                properties:
+                  fuel_purchases_cost: { const: "0.00000000" }
+                  total_fuel_cost: { const: "0.00000000" }
+      additionalProperties: true
+    NonnegativeDecimal:
+      type: string
+      pattern: '^(0|[1-9][0-9]*)\.[0-9]{8}$'
+      description: Nonnegative value serialized with eight fractional digits.
+    CoordinatePair:
+      type: array
+      minItems: 2
+      maxItems: 2
+      prefixItems:
+        - { type: number, minimum: -180, maximum: 180 }
+        - { type: number, minimum: -90, maximum: 90 }
+      items: false
+      description: GeoJSON longitude, latitude order.
+    Point:
+      type: object
+      required: [latitude, longitude]
+      properties:
+        latitude: { type: number, minimum: -90, maximum: 90 }
+        longitude: { type: number, minimum: -180, maximum: 180 }
+    ResolvedLocation:
+      type: object
+      required: [coordinates, routing_coordinates, precision, state, place_id, name]
+      properties:
+        coordinates: { $ref: "#/components/schemas/Point" }
+        routing_coordinates: { $ref: "#/components/schemas/Point" }
+        precision: { type: string }
+        state: { type: string }
+        place_id: { type: [string, 'null'] }
+        name: { type: [string, 'null'] }
+    Vehicle:
+      type: object
+      required: [range_miles, miles_per_gallon, capacity_gallons, initial_fuel_gallons, reserve_gallons]
+      properties:
+        range_miles: { const: 500 }
+        miles_per_gallon: { const: 10 }
+        capacity_gallons: { const: 50 }
+        initial_fuel_gallons: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        reserve_gallons: { $ref: "#/components/schemas/NonnegativeDecimal" }
+    Route:
+      type: object
+      required: [geometry, distance_miles, duration_seconds, baseline_duration_seconds, extra_duration_seconds, legs]
+      properties:
+        geometry:
+          oneOf:
+            - type: object
+              required: [type, coordinates]
+              properties:
+                type: { const: LineString }
+                coordinates:
+                  type: array
+                  minItems: 2
+                  items: { $ref: "#/components/schemas/CoordinatePair" }
+            - type: object
+              required: [type, coordinates]
+              properties:
+                type: { const: Point }
+                coordinates: { $ref: "#/components/schemas/CoordinatePair" }
+        distance_miles: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        duration_seconds: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        baseline_duration_seconds: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        extra_duration_seconds: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        baseline_distance_miles: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        extra_distance_miles: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        legs:
+          type: array
+          items:
+            type: object
+            required: [sequence, distance_miles, fuel_consumed_gallons, arrival_fuel_gallons, departure_fuel_gallons]
+            properties:
+              sequence: { type: integer, minimum: 1 }
+              distance_miles: { $ref: "#/components/schemas/NonnegativeDecimal" }
+              fuel_consumed_gallons: { $ref: "#/components/schemas/NonnegativeDecimal" }
+              arrival_fuel_gallons: { $ref: "#/components/schemas/NonnegativeDecimal" }
+              departure_fuel_gallons: { $ref: "#/components/schemas/NonnegativeDecimal" }
+    FuelStop:
+      type: object
+      required: [sequence, station_id, name, address, city, state, coordinates, price_per_gallon, arrival_fuel_gallons, purchase_gallons, departure_fuel_gallons, purchase_cost]
+      properties:
+        sequence: { type: integer, minimum: 1 }
+        station_id: { type: string, minLength: 1 }
+        name: { type: string }
+        address: { type: string }
+        city: { type: string }
+        state: { type: string }
+        coordinates: { $ref: "#/components/schemas/Point" }
+        price_per_gallon: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        arrival_fuel_gallons: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        purchase_gallons: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        departure_fuel_gallons: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        purchase_cost: { $ref: "#/components/schemas/NonnegativeDecimal" }
+    Costs:
+      type: object
+      required: [currency, fuel_purchases_cost, total_fuel_cost, ending_fuel_gallons]
+      properties:
+        currency: { const: USD }
+        fuel_purchases_cost: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        total_fuel_cost: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        ending_fuel_gallons: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        fuel_purchased_gallons: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        fuel_consumed_gallons: { $ref: "#/components/schemas/NonnegativeDecimal" }
+        initial_fuel_unit_price:
+          oneOf:
+            - { $ref: "#/components/schemas/NonnegativeDecimal" }
+            - { type: 'null' }
+        initial_fuel_price_basis: { type: string }
+        is_estimate: { const: true }
+    CreatedTrip:
+      allOf:
+        - $ref: "#/components/schemas/SavedTrip"
+        - type: object
+          required: [trip_id, result_token, map_url]
+          properties:
+            trip_id: { type: string }
+            result_token: { type: string }
+            map_url: { type: string }

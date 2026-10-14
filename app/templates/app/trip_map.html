@@ -1,0 +1,60 @@
+{% load static %}<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Fuel Route Planner · Verified trip</title>
+  <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
+  <link rel="stylesheet" href="{% static 'app/trip_map.css' %}">
+  <script defer src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
+  <script defer src="{% static 'app/trip_map.js' %}"></script>
+</head>
+<body data-trip-id="{{ trip_id }}">
+  <header class="app-header">
+    <div class="brand-mark" aria-hidden="true">A</div>
+    <div class="brand-name">Fuel Route Planner</div>
+  </header>
+  <main class="workspace" id="workspace">
+    <section class="summary" aria-labelledby="trip-heading">
+      <div class="summary-inner">
+        <p class="eyebrow">Trip summary</p>
+        <h1 id="trip-heading">Your verified route</h1>
+        <p class="route-subtitle" id="route-subtitle">Loading saved result…</p>
+        <div class="cost-block">
+          <p class="eyebrow">Fuel purchases during trip</p>
+          <p class="total-cost" id="total-cost">—</p>
+          <div class="secondary-cost"><span>Estimated value of fuel consumed</span><strong id="consumed-cost">—</strong></div>
+        </div>
+        <div class="stop-section">
+          <h2 class="eyebrow" id="stops-heading">Fuel stops</h2>
+          <div id="stop-list" class="stop-list" aria-labelledby="stops-heading"></div>
+        </div>
+        <details class="route-details" id="route-details">
+          <summary>Route details</summary>
+          <div class="detail-content">
+            <dl class="route-facts" id="route-facts"></dl>
+            <h3>Verified road legs</h3>
+            <ol class="leg-list" id="leg-list"></ol>
+          </div>
+        </details>
+        <p class="cost-note">Fuel costs are estimates using the supplied assessment prices and fixed 10 mpg efficiency.</p>
+      </div>
+    </section>
+    <section class="map-panel" aria-labelledby="map-heading">
+      <h2 class="sr-only" id="map-heading">Route map</h2>
+      <div id="map" class="map-canvas" role="img" aria-label="Map of the verified route and fuel stops"></div>
+      <div class="map-tools">
+        <button class="map-tool" id="fit-route" type="button" title="Fit complete route" aria-label="Fit complete route">Fit route</button>
+      </div>
+      <div class="map-message" id="map-message" role="status" hidden></div>
+      <div class="map-credit">Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a></div>
+    </section>
+  </main>
+  <div class="page-error" id="page-error" role="alert" hidden>
+    <h1 id="error-heading">Trip unavailable</h1>
+    <p id="error-message">This saved trip could not be loaded.</p>
+  </div>
+</body>
+</html>

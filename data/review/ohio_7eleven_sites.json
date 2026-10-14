@@ -1,0 +1,66 @@
+{
+  "review_date": "2026-10-08",
+  "tank_register_url": "https://ohiofireceb.com.ohio.gov/DXAdmin/ImageBrowser/ThumbnailImages?documentId=1314154",
+  "tank_register_sha256": "98cf5ea771ccf8987474f770967b40680662799df8ec3651f69086e11787c84e",
+  "turnpike_url": "https://www.ohioturnpike.org/docs/default-source/procurement/rfp-no-7-2020-addendum-no-1.pdf?sfvrsn=ab43f4c4_0",
+  "turnpike_sha256": "dda16665cf246a7f1fb075142cf076461d74530d6509cc30bcd81f4fa829df8e",
+  "records": [
+    {
+      "opis_id": "7396", "store_number": "36180", "address": "150 Sandusky St",
+      "city": "Monroeville", "state": "OH", "tank_register_page": 6,
+      "site_id": "overture:c8c6ac06-35a3-4e7c-838f-0a765a7277b0",
+      "overture_id": "c8c6ac06-35a3-4e7c-838f-0a765a7277b0",
+      "latitude": 41.248035, "longitude": -82.6994236
+    },
+    {
+      "opis_id": "61421", "store_number": "40294", "address": "7998 Leavitt Rd",
+      "city": "Amherst", "state": "OH", "tank_register_page": 8,
+      "site_id": "overture:7bd4cc92-594d-4351-a558-5abfd2ea2f2b",
+      "overture_id": "7bd4cc92-594d-4351-a558-5abfd2ea2f2b",
+      "latitude": 41.377444, "longitude": -82.224895
+    },
+    {
+      "opis_id": "61430", "store_number": "40303", "address": "1012 North County Road",
+      "city": "Clyde", "state": "OH", "tank_register_page": 9,
+      "site_id": "overture:c8657735-eb8b-4c1c-80f0-d692770e5625",
+      "overture_id": "c8657735-eb8b-4c1c-80f0-d692770e5625",
+      "latitude": 41.36916, "longitude": -82.95627
+    },
+    {
+      "opis_id": "61439", "store_number": "40302", "address": "6410 CR 165",
+      "city": "Genoa", "state": "OH", "tank_register_page": 9,
+      "site_id": "overture:85bd9f81-e365-4660-9d0f-0ddc04775ff8",
+      "overture_id": "85bd9f81-e365-4660-9d0f-0ddc04775ff8",
+      "latitude": 41.48965, "longitude": -83.36958
+    },
+    {
+      "opis_id": "61449", "store_number": "40297", "address": "9270 Limeridge Road",
+      "city": "Mantua", "state": "OH", "tank_register_page": 8,
+      "site_id": "ohio-turnpike:portage:westbound", "overture_id": null,
+      "latitude": 41.244826, "longitude": -81.178404,
+      "turnpike_page": 18,
+      "coordinate_note": "Turnpike PDF reverses latitude/longitude labels; point is north westbound plaza."
+    },
+    {
+      "opis_id": "64223", "store_number": "40295", "address": "2000 Edgerton Road",
+      "city": "Broadview Heights", "state": "OH", "tank_register_page": 8,
+      "site_id": "overture:17049385-7ed9-46ea-a87a-801e7967d9f1",
+      "overture_id": "17049385-7ed9-46ea-a87a-801e7967d9f1",
+      "latitude": 41.29238, "longitude": -81.67124
+    },
+    {
+      "opis_id": "64224", "store_number": "40296", "address": "10037 Broadview Road",
+      "city": "Broadview Heights", "state": "OH", "tank_register_page": 8,
+      "site_id": "overture:da4f8dc4-86f2-44c2-96d0-bd20d37fd077",
+      "overture_id": "da4f8dc4-86f2-44c2-96d0-bd20d37fd077",
+      "latitude": 41.29166, "longitude": -81.67581
+    },
+    {
+      "opis_id": "67678", "store_number": "40301", "address": "6164 CR 165",
+      "city": "Genoa", "state": "OH", "tank_register_page": 9,
+      "site_id": "overture:24c8a25c-344f-40d5-a499-b3bda1faa761",
+      "overture_id": "24c8a25c-344f-40d5-a499-b3bda1faa761",
+      "latitude": 41.48663, "longitude": -83.36213
+    }
+  ]
+}

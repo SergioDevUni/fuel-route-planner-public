@@ -1,0 +1,65 @@
+{
+  "purpose": "Reviewed Canadian Pilot physical-site links; routing remains pending_check",
+  "records": [
+    {
+      "opis_id": "66418",
+      "province": "AB",
+      "branch": "818",
+      "official_url": "https://locations.pilotflyingj.com/ca/ab/edson-motco/2520-2-ave",
+      "official_address": "2520 2 Ave, Edson Motco, AB (CSV locality Edson; Overture 1 Ave)",
+      "official_latitude": 53.5881513,
+      "official_longitude": -116.3862858,
+      "overture_id": "25ba21f7-1516-404a-ba1c-055a1efce576"
+    },
+    {
+      "opis_id": "66988",
+      "province": "AB",
+      "branch": "821",
+      "official_url": "https://locations.pilotflyingj.com/ca/ab/lethbridge/1005-43-st-s",
+      "official_address": "1005 43 St S, Lethbridge, AB (current Shell Cardlock name)",
+      "official_latitude": 49.6828577,
+      "official_longitude": -112.7784135,
+      "overture_id": "5a477808-c149-404d-9040-c7873a63b47d"
+    },
+    {
+      "opis_id": "67031",
+      "province": "BC",
+      "branch": "798",
+      "official_url": "https://locations.pilotflyingj.com/ca/bc/annacis-island-delta/1291-cliveden-ave",
+      "official_address": "1291 Cliveden Ave, Annacis Island Delta, BC",
+      "official_latitude": 49.1701980,
+      "official_longitude": -122.9552972,
+      "overture_id": "95b66556-4bfe-4e09-a90d-a092fe2a001c"
+    },
+    {
+      "opis_id": "69032",
+      "province": "ON",
+      "branch": "866",
+      "official_url": "https://locations.pilotflyingj.com/ca/on/shuniah/3200-hwy-11-17",
+      "official_address": "3200 Hwy 11-17, Shuniah, ON (CSV locality Pass Lake)",
+      "official_latitude": 48.6034506,
+      "official_longitude": -88.7823322,
+      "overture_id": "2eebac48-fe15-448d-b4ab-868be6343bcd"
+    },
+    {
+      "opis_id": "69586",
+      "province": "ON",
+      "branch": "853",
+      "official_url": "https://locations.pilotflyingj.com/ca/on/sault-ste.-marie/996-great-northern-rd",
+      "official_address": "996 Great Northern Rd, Sault Ste. Marie, ON",
+      "official_latitude": 46.5570050,
+      "official_longitude": -84.3185229,
+      "overture_id": "3993082c-4237-42e0-951d-f2baa1deb4f5"
+    },
+    {
+      "opis_id": "70332",
+      "province": "ON",
+      "branch": "1201",
+      "official_url": "https://locations.pilotflyingj.com/ca/on/inglewood/13947-hurontario-st",
+      "official_address": "13947 Hurontario St, Inglewood, ON (Overture brand Shell)",
+      "official_latitude": 43.7726279,
+      "official_longitude": -79.8763214,
+      "overture_id": "1a30749c-81dc-4817-9f6d-74eff9a3c689"
+    }
+  ]
+}

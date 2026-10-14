@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "repository": "SergioDevUni/fuel-route-planner-public",
+  "version": "v1.0.0",
+  "asset": "assets.zip",
+  "sha256": "20d017859f9288a6ffecaaf9d0740e3ecaf9271cba04892d6bcd060bd032aa6c",
+  "bytes": 97240832,
+  "planner_sha256": "88fece358a76c6da087adf6526144f1a3120d9576f3a22debb3af674402e562a",
+  "dataset": {
+    "source_sha256": "c704371f141ded9c54df6c32d488a0ba2ceb589f88c936c967daa5330e0cd241",
+    "station_ids": 6738,
+    "us_offers": 6626,
+    "candidate_sha256": "763e4064e393e6615ea4a698ebbc4b2425a366ad723782e241658018f0f585ad"
+  },
+  "road": {
+    "database": "station_edges_v2_live.db",
+    "graph_version": "geofabrik-us-20261009-valhalla-3.9.1-auto",
+    "points": 6394,
+    "completed_sources": 4231,
+    "valhalla_tiles_included": false
+  },
+  "hosted_settings": {
+    "FUEL_PLANNING_CAPACITY": "6",
+    "FUEL_MATRIX_GRAPH": "1",
+    "FUEL_MATRIX_FIRST": "1",
+    "FUEL_MATRIX_CACHE_VERSION": "v1",
+    "FUEL_PARTIAL_ROAD_REFINER": "0",
+    "FUEL_PARTIAL_ROAD_LOCAL_FIRST": "0",
+    "FUEL_PARTIAL_ROAD_PORTFOLIO": "0",
+    "FUEL_NATIONAL_LOCAL_ROUTER": "0"
+  }
+}

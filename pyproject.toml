@@ -1,0 +1,109 @@
+[project]
+name = "fuel-route-planner"
+version = "0.1.0"
+description = "Synchronous route and fuel planning API"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "django==6.1.2",
+  "httpx>=0.28,<0.29",
+  "numpy>=2,<3",
+  "pyproj>=3.7,<3.8",
+  "scipy>=1.16,<2",
+  "shapely>=2.1,<2.2",
+  "waitress>=3,<4",
+  "whitenoise==6.12.0",
+]
+
+[dependency-groups]
+dev = [
+  "coverage>=7,<8",
+  "duckdb>=1.4,<2",
+  "jsonschema>=4,<5",
+  "mypy>=1.18,<2",
+  "pymupdf>=1.26,<2",
+  "pypdf>=6,<7",
+  "pyshp>=2.3,<3",
+  "pytest>=8,<9",
+  "pyyaml>=6,<7",
+  "ruff>=0.13,<0.14",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+target-version = "py313"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+files = [
+  "app/domain",
+  "app/routing/curl_process.py",
+  "app/routing/curl_transport.py",
+  "app/api/validation.py",
+  "app/api/serialization.py",
+  "app/api/cache.py",
+  "app/api/coalescing.py",
+  "app/api/deadline.py",
+  "app/api/request_execution.py",
+  "app/planning/settings.py",
+  "app/planning/optimization.py",
+  "app/planning/ranking.py",
+  "app/planning/request.py",
+  "app/planning/quality_evidence.py",
+  "app/planning/graph_preparation.py",
+  "app/planning/graph_cost_bounds.py",
+  "app/planning/graph_incumbent.py",
+  "app/planning/graph_search_state.py",
+  "app/planning/asset_cache.py",
+  "app/planning/candidates.py",
+  "app/planning/query_road_graph.py",
+  "app/planning/portfolio.py",
+  "app/planning/baseline_cache.py",
+  "app/planning/trip.py",
+  "app/planning/fuel.py",
+  "app/planning/fuel_profile.py",
+  "app/planning/verification_timing.py",
+  "app/planning/graph_search.py",
+  "app/planning/matrix_candidates.py",
+  "app/planning/road_graph.py",
+  "app/planning/ledger.py",
+  "app/planning/budget.py",
+  "app/planning/ports.py",
+  "app/planning/national_graph.py",
+  "app/planning/national_refiner.py",
+  "app/planning/mip_search.py",
+  "app/routing/local_valhalla.py",
+  "app/planning/trip_context.py",
+  "app/planning/trip_types.py",
+  "app/planning/trip_policy.py",
+  "app/planning/trip_results.py",
+  "app/planning/hosted_planning.py",
+  "app/planning/local_planning.py",
+  "app/planning/corridor_selection.py",
+  "app/planning/initial_route.py",
+  "app/planning/matrix_first.py",
+  "app/planning/matrix_selection.py",
+  "app/planning/route_verification.py",
+  "app/planning/route_recovery.py",
+  "app/planning/fuel_graph.py",
+  "app/planning/fuel_labels.py",
+  "app/planning/graph_bounds.py",
+]
+
+[[tool.mypy.overrides]]
+module = ["shapely.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-m 'not integration' --strict-markers"
+markers = [
+  "integration: real server/process/curl checks or replay of prepared geographic catalogs",
+]
